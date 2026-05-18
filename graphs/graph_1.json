@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Figure 1. Live Coral Cover by Reef per Year",
+    "subtitle": "live coral % in different sectors between 2018 - 2023",
+    "fontSize": 14,
+    "subtitleFontSize": 11,
+    "subtitleColor": "grey",
+    "anchor": "start"
+  },
+  "width": 400,
+  "height": 500,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "params": [
+    {
+      "name": "year_select",
+      "value": 2023,
+      "bind": {
+        "input": "select",
+        "options": [2018, 2019, 2020, 2021, 2022, 2023],
+        "name": "Year: "
+      }
+    },
+    {
+      "name": "sector_select",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "CA",
+          "CB",
+          "CG",
+          "CL",
+          "CU",
+          "IN",
+          "PC",
+          "PO",
+          "SW",
+          "TO",
+          "WH"
+        ],
+        "labels": [
+          "All Sectors",
+          "Cairns",
+          "Capricorn-Bunker",
+          "Cooktown/Lizard Is.",
+          "Central",
+          "Capricorn",
+          "Innisfail",
+          "Princess Charlotte Bay",
+          "Pompey",
+          "Swain",
+          "Townsville",
+          "Whitsunday"
+        ],
+        "name": "Sector: "
+      }
+    },
+    {
+      "name": "zoom_level",
+      "value": 1600,
+      "bind": {
+        "input": "range",
+        "min": 1000,
+        "max": 4000,
+        "step": 50,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [147.5, -18.5],
+      "bind": {
+        "input": "select",
+        "options": [
+          [147.5, -18.5],
+          [145.5, -15.0],
+          [145.8, -17.0],
+          [146.8, -19.2],
+          [148.5, -20.5],
+          [149.0, -22.5],
+          [150.8, -23.5]
+        ],
+        "labels": [
+          "Full Reef",
+          "Cape York / Far North",
+          "Cooktown / Lizard Island",
+          "Cairns / Innisfail",
+          "Townsville",
+          "Whitsunday",
+          "Capricorn-Bunker"
+        ],
+        "name": "Location: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "equirectangular",
+    "center": { "expr": "center_to" },
+    "scale": { "expr": "zoom_level" }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/ne_110m_admin_0_countries.topojson",
+        "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
+      },
+      "transform": [{ "filter": "datum.properties.NAME == 'Australia'" }],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e8ede4",
+        "stroke": "#aabba0"
+      }
+    },
+    {
+      "data": { "url": "data/mantatowbyreef.csv" },
+      "transform": [
+        { "filter": "datum.REPORT_YEAR == year_select" },
+        { "filter": "datum.MEAN_LIVE_CORAL != ''" },
+        { "filter": "sector_select == null || datum.SECTOR == sector_select" }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.8,
+        "stroke": "white",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "longitude": { "field": "LONGITUDE", "type": "quantitative" },
+        "latitude": { "field": "LATITUDE", "type": "quantitative" },
+        "color": {
+          "field": "MEAN_LIVE_CORAL",
+          "type": "quantitative",
+          "title": "Live Coral (%)",
+          "scale": {
+            "type": "threshold",
+            "domain": [10, 20, 30, 40],
+            "range": ["#d73027", "#fc8d59", "#fee090", "#91cf60", "#1a9850"]
+          },
+          "legend": {
+            "orient": "none",
+            "legendX": 300,
+            "legendY": 8,
+            "titleFontSize": 10,
+            "labelFontSize": 9,
+            "gradientLength": 90,
+            "gradientThickness": 10
+          }
+        },
+        "size": { "value": 40 },
+        "tooltip": [
+          { "field": "REEF_NAME", "type": "nominal", "title": "Reef" },
+          { "field": "SECTOR", "type": "nominal", "title": "Sector" },
+          { "field": "SHELF", "type": "nominal", "title": "Shelf" },
+          {
+            "field": "MEAN_LIVE_CORAL",
+            "type": "quantitative",
+            "title": "Live Coral (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "MEAN_COTS_PER_TOW",
+            "type": "quantitative",
+            "title": "CoTS/tow",
+            "format": ".2f"
+          },
+          { "field": "REPORT_YEAR", "type": "quantitative", "title": "Year" }
+        ]
+      }
+    }
+  ]
+}

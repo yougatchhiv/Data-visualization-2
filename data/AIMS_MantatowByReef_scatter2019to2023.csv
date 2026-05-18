@@ -1,0 +1,476 @@
+Year,REEF_NAME,SECTOR,SECTOR_NAME,SHELF_NAME,MEAN_LIVE_CORAL,MEAN_COTS_PER_TOW,TOWS
+2019,Low Islands Reef,CA,Cairns,Inner,26.935,0.0,31
+2020,Low Islands Reef,CA,Cairns,Inner,16.204,0.0,27
+2021,Low Islands Reef,CA,Cairns,Inner,21.797,0.0,32
+2022,Low Islands Reef,CA,Cairns,Inner,41.211,0.0,32
+2023,Low Islands Reef,CA,Cairns,Inner,39.234,0.0,31
+2019,Green Island Reef,CA,Cairns,Inner,4.444,0.0,54
+2021,Green Island Reef,CA,Cairns,Inner,13.205,0.0,39
+2022,Green Island Reef,CA,Cairns,Inner,20.441,0.0,51
+2023,Green Island Reef,CA,Cairns,Inner,18.698,0.0,48
+2021,Fitzroy Island Reef,CA,Cairns,Inner,34.063,0.0,36
+2022,Fitzroy Island Reef,CA,Cairns,Inner,35.594,0.0,40
+2023,Fitzroy Island Reef,CA,Cairns,Inner,30.833,0.0,39
+2019,Pickersgill Reef,CA,Cairns,Mid-shelf,7.928,0.0,76
+2020,Pickersgill Reef,CA,Cairns,Mid-shelf,17.667,0.0,75
+2021,Pickersgill Reef,CA,Cairns,Mid-shelf,34.784,0.0,81
+2020,Evening Reef,CA,Cairns,Mid-shelf,9.412,0.0,51
+2021,Evening Reef,CA,Cairns,Mid-shelf,25.95,0.02,50
+2022,Evening Reef,CA,Cairns,Mid-shelf,28.627,0.0,51
+2022,Morning Reef,CA,Cairns,Mid-shelf,28.466,0.0,22
+2020,16013A,CA,Cairns,Mid-shelf,21.389,0.0,9
+2021,16013A,CA,Cairns,Mid-shelf,24.375,0.0,10
+2020,16013B,CA,Cairns,Mid-shelf,25.357,0.0,7
+2021,16013B,CA,Cairns,Mid-shelf,64.531,0.0,8
+2020,16013C,CA,Cairns,Mid-shelf,3.75,0.0,4
+2021,16013C,CA,Cairns,Mid-shelf,22.5,0.0,4
+2019,Mackay Reef,CA,Cairns,Mid-shelf,10.435,0.0,23
+2021,Mackay Reef,CA,Cairns,Mid-shelf,32.228,0.0,23
+2022,Mackay Reef,CA,Cairns,Mid-shelf,44.946,0.0,23
+2023,Mackay Reef,CA,Cairns,Mid-shelf,32.031,0.0,24
+2019,16017S,CA,Cairns,Mid-shelf,13.833,0.0,15
+2019,Chinaman Reef(16024),CA,Cairns,Mid-shelf,10.743,0.0,37
+2019,Vlasoff Reef,CA,Cairns,Mid-shelf,4.924,0.0,33
+2019,Hastings Reef,CA,Cairns,Mid-shelf,5.551,0.0,59
+2020,Hastings Reef,CA,Cairns,Mid-shelf,4.331,0.0,71
+2021,Hastings Reef,CA,Cairns,Mid-shelf,15.885,0.0,65
+2022,Hastings Reef,CA,Cairns,Mid-shelf,16.563,0.0,64
+2023,Hastings Reef,CA,Cairns,Mid-shelf,24.631,0.0,61
+2019,Michaelmas Reef,CA,Cairns,Mid-shelf,8.066,0.0,106
+2021,Michaelmas Reef,CA,Cairns,Mid-shelf,9.44,0.0,105
+2023,Michaelmas Reef,CA,Cairns,Mid-shelf,13.839,0.0,126
+2020,Arlington Reef,CA,Cairns,Mid-shelf,8.75,0.0,60
+2019,Thetford Reef,CA,Cairns,Mid-shelf,8.488,0.0,43
+2020,Thetford Reef,CA,Cairns,Mid-shelf,14.36,0.0,43
+2021,Thetford Reef,CA,Cairns,Mid-shelf,15.256,0.0,39
+2022,Thetford Reef,CA,Cairns,Mid-shelf,30.756,0.0,43
+2023,Thetford Reef,CA,Cairns,Mid-shelf,26.22,0.0,41
+2019,Andersen Reef,CA,Cairns,Outer,23.514,0.0,37
+2023,Andersen Reef,CA,Cairns,Outer,39.507,0.0,38
+2020,Rachel Carson Reef,CA,Cairns,Outer,20.579,0.0,41
+2021,Rachel Carson Reef,CA,Cairns,Outer,30.357,0.0,42
+2019,Agincourt Reefs (No 1),CA,Cairns,Outer,10.786,0.0,35
+2020,Agincourt Reefs (No 1),CA,Cairns,Outer,25.078,0.0,32
+2021,Agincourt Reefs (No 1),CA,Cairns,Outer,30.993,0.0,34
+2023,Agincourt Reefs (No 1),CA,Cairns,Outer,45.313,0.0,32
+2019,St Crispin Reef,CA,Cairns,Outer,7.661,0.0,93
+2020,St Crispin Reef,CA,Cairns,Outer,8.174,0.0,89
+2021,St Crispin Reef,CA,Cairns,Outer,21.677,0.0,82
+2023,St Crispin Reef,CA,Cairns,Outer,14.942,0.0,86
+2019,Opal (2),CA,Cairns,Outer,7.8,0.0,75
+2021,Opal (2),CA,Cairns,Outer,11.282,0.0,78
+2020,Norman Reef,CA,Cairns,Outer,18.854,0.0,36
+2021,Norman Reef,CA,Cairns,Outer,17.643,0.0,35
+2020,Flynn Reef,CA,Cairns,Outer,9.271,0.0,24
+2020,North Reef (North),CB,Capricorn-Bunker,Outer,41.689,0.0,37
+2021,North Reef (North),CB,Capricorn-Bunker,Outer,46.034,0.0,29
+2019,Broomfield Reef,CB,Capricorn-Bunker,Outer,52.995,0.0,48
+2020,Broomfield Reef,CB,Capricorn-Bunker,Outer,51.675,0.0,50
+2021,Broomfield Reef,CB,Capricorn-Bunker,Outer,58.194,0.0,54
+2022,Broomfield Reef,CB,Capricorn-Bunker,Outer,59.286,0.0,56
+2023,Broomfield Reef,CB,Capricorn-Bunker,Outer,57.823,0.0,58
+2019,Wreck Island Reef,CB,Capricorn-Bunker,Outer,51.453,0.0,43
+2021,Wreck Island Reef,CB,Capricorn-Bunker,Outer,72.917,0.0,45
+2022,Wreck Island Reef,CB,Capricorn-Bunker,Outer,74.302,0.0,43
+2023,Wreck Island Reef,CB,Capricorn-Bunker,Outer,55.61,0.0,43
+2019,One Tree Reef,CB,Capricorn-Bunker,Outer,43.766,0.039,76
+2021,One Tree Reef,CB,Capricorn-Bunker,Outer,55.577,0.0,78
+2022,One Tree Reef,CB,Capricorn-Bunker,Outer,62.713,0.012,82
+2023,One Tree Reef,CB,Capricorn-Bunker,Outer,61.507,0.044,68
+2020,Erskine Reef,CB,Capricorn-Bunker,Outer,41.974,0.0,19
+2021,Erskine Reef,CB,Capricorn-Bunker,Outer,37.56,0.0,21
+2022,Erskine Reef,CB,Capricorn-Bunker,Outer,37.679,0.0,21
+2023,Erskine Reef,CB,Capricorn-Bunker,Outer,46.667,0.0,18
+2020,Mast Head Reef,CB,Capricorn-Bunker,Outer,38.212,0.0,65
+2021,Mast Head Reef,CB,Capricorn-Bunker,Outer,28.542,0.0,48
+2022,Mast Head Reef,CB,Capricorn-Bunker,Outer,34.59,0.0,64
+2023,Mast Head Reef,CB,Capricorn-Bunker,Outer,33.646,0.0,48
+2020,Boult Reef,CB,Capricorn-Bunker,Outer,48.949,0.045,44
+2021,Boult Reef,CB,Capricorn-Bunker,Outer,60.714,0.0,42
+2020,Hoskyn Islands Reef,CB,Capricorn-Bunker,Outer,47.765,0.0,33
+2021,Hoskyn Islands Reef,CB,Capricorn-Bunker,Outer,63.281,0.0,32
+2020,Fairfax Islands Reef,CB,Capricorn-Bunker,Outer,39.281,0.0,40
+2021,Fairfax Islands Reef,CB,Capricorn-Bunker,Outer,51.283,0.0,38
+2022,Fairfax Islands Reef,CB,Capricorn-Bunker,Outer,59.896,0.0,36
+2023,Fairfax Islands Reef,CB,Capricorn-Bunker,Outer,51.955,0.051,39
+2019,Lady Musgrave Reef,CB,Capricorn-Bunker,Outer,50.295,0.382,55
+2020,Lady Musgrave Reef,CB,Capricorn-Bunker,Outer,49.652,0.0,61
+2021,Lady Musgrave Reef,CB,Capricorn-Bunker,Outer,51.117,0.03,66
+2022,Lady Musgrave Reef,CB,Capricorn-Bunker,Outer,68.347,0.0,59
+2023,Lady Musgrave Reef,CB,Capricorn-Bunker,Outer,55.69,0.0,67
+2019,Curd Reef,CG,Cooktown/Lizard Is.,Inner,14.632,0.0,34
+2021,Curd Reef,CG,Cooktown/Lizard Is.,Inner,17.759,0.0,29
+2020,Mcsweeney Reef,CG,Cooktown/Lizard Is.,Mid-shelf,2.845,0.138,29
+2021,Mcsweeney Reef,CG,Cooktown/Lizard Is.,Mid-shelf,5.625,0.083,24
+2022,Mcsweeney Reef,CG,Cooktown/Lizard Is.,Mid-shelf,11.319,0.194,36
+2023,Mcsweeney Reef,CG,Cooktown/Lizard Is.,Mid-shelf,13.654,0.0,26
+2020,Monsoon Reef,CG,Cooktown/Lizard Is.,Mid-shelf,7.188,0.042,24
+2021,Monsoon Reef,CG,Cooktown/Lizard Is.,Mid-shelf,7.054,0.0,28
+2022,Monsoon Reef,CG,Cooktown/Lizard Is.,Mid-shelf,17.25,0.2,30
+2023,Monsoon Reef,CG,Cooktown/Lizard Is.,Mid-shelf,21.05,0.04,25
+2019,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,4.122,0.027,37
+2020,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,3.106,0.0,33
+2021,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,7.568,0.324,37
+2022,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,19.695,0.78,41
+2023,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,18.672,0.031,32
+2020,11162S,CG,Cooktown/Lizard Is.,Mid-shelf,8.879,0.0,29
+2021,11162S,CG,Cooktown/Lizard Is.,Mid-shelf,17.429,0.0,35
+2022,11162S,CG,Cooktown/Lizard Is.,Mid-shelf,29.194,0.065,31
+2023,11162S,CG,Cooktown/Lizard Is.,Mid-shelf,22.083,0.0,30
+2020,Pearson Reef,CG,Cooktown/Lizard Is.,Mid-shelf,10.068,0.0,37
+2021,Pearson Reef,CG,Cooktown/Lizard Is.,Mid-shelf,18.71,0.0,31
+2022,Pearson Reef,CG,Cooktown/Lizard Is.,Mid-shelf,31.836,0.0,32
+2023,Pearson Reef,CG,Cooktown/Lizard Is.,Mid-shelf,20.286,0.0,35
+2019,Middle Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,34.375,0.0,10
+2020,Middle Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,49.125,0.0,10
+2021,Middle Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,31.375,0.0,10
+2022,Middle Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,77.083,0.0,9
+2023,Middle Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,68.889,0.0,9
+2019,Middle Banks B (3),CG,Cooktown/Lizard Is.,Mid-shelf,50.096,0.0,13
+2020,Middle Banks B (3),CG,Cooktown/Lizard Is.,Mid-shelf,61.375,0.0,10
+2021,Middle Banks B (3),CG,Cooktown/Lizard Is.,Mid-shelf,73.021,0.083,12
+2022,Middle Banks B (3),CG,Cooktown/Lizard Is.,Mid-shelf,64.722,0.0,9
+2023,Middle Banks B (3),CG,Cooktown/Lizard Is.,Mid-shelf,49.479,0.0,12
+2019,Ashmore Banks (1),CG,Cooktown/Lizard Is.,Mid-shelf,38.864,0.0,11
+2020,Ashmore Banks (1),CG,Cooktown/Lizard Is.,Mid-shelf,43.229,0.0,12
+2021,Ashmore Banks (1),CG,Cooktown/Lizard Is.,Mid-shelf,59.886,0.0,11
+2022,Ashmore Banks (1),CG,Cooktown/Lizard Is.,Mid-shelf,86.458,0.0,12
+2023,Ashmore Banks (1),CG,Cooktown/Lizard Is.,Mid-shelf,51.591,0.0,11
+2019,Ashmore Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,53.167,0.0,15
+2020,Ashmore Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,54.375,0.0,16
+2021,Ashmore Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,62.875,0.0,10
+2022,Ashmore Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,66.875,0.0,12
+2023,Ashmore Banks (2),CG,Cooktown/Lizard Is.,Mid-shelf,72.0,0.0,15
+2019,Ashmore Banks (3),CG,Cooktown/Lizard Is.,Mid-shelf,37.045,0.0,11
+2020,Ashmore Banks (3),CG,Cooktown/Lizard Is.,Mid-shelf,50.125,0.0,10
+2021,Ashmore Banks (3),CG,Cooktown/Lizard Is.,Mid-shelf,67.188,0.0,12
+2022,Ashmore Banks (3),CG,Cooktown/Lizard Is.,Mid-shelf,72.031,0.0,8
+2023,Ashmore Banks (3),CG,Cooktown/Lizard Is.,Mid-shelf,67.875,0.0,10
+2021,Quoin Reef(12027),CG,Cooktown/Lizard Is.,Mid-shelf,23.75,0.0,7
+2019,Mantis Reef,CG,Cooktown/Lizard Is.,Outer,16.771,0.0,60
+2020,Mantis Reef,CG,Cooktown/Lizard Is.,Outer,21.667,0.0,36
+2021,Mantis Reef,CG,Cooktown/Lizard Is.,Outer,32.143,0.0,28
+2022,Mantis Reef,CG,Cooktown/Lizard Is.,Outer,33.241,0.0,27
+2023,Mantis Reef,CG,Cooktown/Lizard Is.,Outer,39.357,0.0,35
+2019,Lagoon Reef,CG,Cooktown/Lizard Is.,Outer,39.864,0.0,55
+2020,Lagoon Reef,CG,Cooktown/Lizard Is.,Outer,39.227,0.0,55
+2021,Lagoon Reef,CG,Cooktown/Lizard Is.,Outer,38.013,0.0,56
+2022,Lagoon Reef,CG,Cooktown/Lizard Is.,Outer,35.093,0.0,54
+2023,Lagoon Reef,CG,Cooktown/Lizard Is.,Outer,46.623,0.0,57
+2020,12071S,CG,Cooktown/Lizard Is.,Outer,39.12,0.0,27
+2021,12071S,CG,Cooktown/Lizard Is.,Outer,29.185,0.0,23
+2023,12071S,CG,Cooktown/Lizard Is.,Outer,37.589,0.0,28
+2020,Second Small Reef,CG,Cooktown/Lizard Is.,Outer,20.962,0.0,26
+2021,Second Small Reef,CG,Cooktown/Lizard Is.,Outer,39.013,0.0,19
+2023,Second Small Reef,CG,Cooktown/Lizard Is.,Outer,43.092,0.0,19
+2021,Log Reef (South),CG,Cooktown/Lizard Is.,Outer,26.538,0.0,91
+2019,Martin Reef(14123),CL,Central,Inner,8.692,0.0,65
+2021,Martin Reef(14123),CL,Central,Inner,25.68,0.0,57
+2022,Martin Reef(14123),CL,Central,Inner,23.06,0.0,58
+2023,Martin Reef(14123),CL,Central,Inner,41.602,0.078,64
+2019,Linnet Reef,CL,Central,Inner,9.444,0.0,36
+2020,Linnet Reef,CL,Central,Inner,20.262,0.0,43
+2021,Linnet Reef,CL,Central,Inner,16.136,0.0,33
+2022,Linnet Reef,CL,Central,Inner,29.839,0.0,31
+2023,Linnet Reef,CL,Central,Inner,34.393,0.086,35
+2021,Boulder Reef,CL,Central,Inner,25.952,0.0,63
+2023,Boulder Reef,CL,Central,Inner,31.53,0.0,58
+2021,Egret Reef,CL,Central,Inner,9.167,0.0,45
+2023,Egret Reef,CL,Central,Inner,15.784,0.0,51
+2021,14056S,CL,Central,Mid-shelf,8.25,0.0,50
+2021,Fly Reef,CL,Central,Mid-shelf,10.87,0.043,23
+2019,Macgillivray Reef,CL,Central,Mid-shelf,5.0,0.0,15
+2020,Macgillivray Reef,CL,Central,Mid-shelf,9.063,0.0,16
+2021,Macgillivray Reef,CL,Central,Mid-shelf,21.719,0.0,16
+2022,Macgillivray Reef,CL,Central,Mid-shelf,31.316,0.0,19
+2023,Macgillivray Reef,CL,Central,Mid-shelf,36.912,0.059,17
+2019,Lizard Island,CL,Central,Mid-shelf,3.438,0.0,80
+2021,Lizard Island,CL,Central,Mid-shelf,13.417,0.011,90
+2022,Lizard Island,CL,Central,Mid-shelf,22.368,0.0,85
+2023,Lizard Island,CL,Central,Mid-shelf,24.083,0.01,105
+2021,Eyrie Reef,CL,Central,Mid-shelf,29.853,0.0,68
+2021,Helsdon Reef,CL,Central,Mid-shelf,27.708,0.0,42
+2019,North Direction Reef,CL,Central,Mid-shelf,9.063,0.0,16
+2021,North Direction Reef,CL,Central,Mid-shelf,49.632,0.0,17
+2022,North Direction Reef,CL,Central,Mid-shelf,43.75,0.0,18
+2023,North Direction Reef,CL,Central,Mid-shelf,49.853,0.0,17
+2023,South Direction Reef (North),CL,Central,Mid-shelf,26.281,0.0,40
+2021,Forrester Reef,CL,Central,Mid-shelf,26.165,0.0,59
+2023,Forrester Reef,CL,Central,Mid-shelf,41.864,0.034,59
+2021,Mackay Reefs,CL,Central,Mid-shelf,6.071,0.0,56
+2023,Marx Reef,CL,Central,Mid-shelf,45.65,0.0,25
+2021,Startle (East),CL,Central,Mid-shelf,8.704,0.0,27
+2021,Swinger Reef,CL,Central,Mid-shelf,25.781,0.0,16
+2023,Swinger Reef,CL,Central,Mid-shelf,39.338,0.0,17
+2021,15077S,CL,Central,Mid-shelf,25.905,0.0,29
+2023,Irene Reef,CL,Central,Mid-shelf,19.882,0.0,53
+2021,14075S,CL,Central,Outer,32.802,0.0,58
+2023,Hilder Reef,CL,Central,Outer,39.224,0.0,58
+2019,Carter Reef,CL,Central,Outer,6.709,0.0,79
+2021,Carter Reef,CL,Central,Outer,17.727,0.0,77
+2022,Carter Reef,CL,Central,Outer,29.162,0.0,94
+2023,Carter Reef,CL,Central,Outer,32.826,0.0,92
+2019,Yonge Reef,CL,Central,Outer,11.765,0.0,85
+2021,Yonge Reef,CL,Central,Outer,18.946,0.0,83
+2022,Yonge Reef,CL,Central,Outer,28.51,0.0,78
+2023,Yonge Reef,CL,Central,Outer,35.436,0.0,86
+2019,No Name Reef,CL,Central,Outer,8.417,0.0,60
+2020,No Name Reef,CL,Central,Outer,12.793,0.0,64
+2021,No Name Reef,CL,Central,Outer,22.182,0.0,55
+2022,No Name Reef,CL,Central,Outer,29.936,0.0,59
+2023,No Name Reef,CL,Central,Outer,25.411,0.0,76
+2023,No 10 Patches (No 2),CL,Central,Outer,33.864,0.0,22
+2021,Ribbon No 9 Reef,CL,Central,Outer,28.056,0.0,81
+2021,Harrier Reef,CL,Central,Outer,30.0,0.0,20
+2021,15034S,CL,Central,Outer,35.121,0.0,31
+2021,Ribbon No 3 Reef,CL,Central,Outer,24.067,0.0,63
+2021,Ribbon No 1 Reef,CL,Central,Outer,35.303,0.0,33
+2021,Lena Reef,CL,Central,Outer,39.128,0.0,43
+2023,Lena Reef,CL,Central,Outer,38.237,0.0,39
+2021,Holbourne Island Reef,CU,Capricorn,Inner,8.452,0.0,21
+2021,Shrimp Reef,CU,Capricorn,Mid-shelf,31.988,0.0,61
+2021,Bowden Reef,CU,Capricorn,Mid-shelf,35.373,0.026,77
+2022,Bowden Reef,CU,Capricorn,Mid-shelf,28.013,0.0,78
+2023,Bowden Reef,CU,Capricorn,Mid-shelf,32.07,0.032,93
+2021,Shell Reef,CU,Capricorn,Mid-shelf,35.75,0.04,25
+2021,Faith Reef,CU,Capricorn,Mid-shelf,27.059,0.088,34
+2022,Faith Reef,CU,Capricorn,Mid-shelf,32.674,0.056,36
+2021,Hope Reef(19046),CU,Capricorn,Mid-shelf,17.583,0.0,30
+2021,Charity Reef,CU,Capricorn,Mid-shelf,17.689,0.0,33
+2022,Kangaroo Reef (West),CU,Capricorn,Mid-shelf,38.319,0.0,29
+2022,Showers Reef,CU,Capricorn,Mid-shelf,24.56,0.0,54
+2021,Elizabeth Reef,CU,Capricorn,Mid-shelf,26.701,0.0,36
+2021,Wansfell Reef,CU,Capricorn,Mid-shelf,25.078,0.0,48
+2021,Viper Reef,CU,Capricorn,Outer,48.103,0.0,29
+2021,Jaguar Reef,CU,Capricorn,Outer,37.27,0.0,38
+2022,Jaguar Reef,CU,Capricorn,Outer,47.5,0.0,31
+2021,Jacqueline Reef,CU,Capricorn,Outer,34.941,0.0,64
+2020,Moore Reef,IN,Innisfail,Mid-shelf,7.097,0.0,93
+2021,Moore Reef,IN,Innisfail,Mid-shelf,11.656,0.0,80
+2021,Scott Reef,IN,Innisfail,Mid-shelf,9.706,0.0,68
+2020,Mcculloch,IN,Innisfail,Mid-shelf,3.589,0.0,101
+2020,Peart Reef,IN,Innisfail,Mid-shelf,8.01,0.0,49
+2022,Peart Reef,IN,Innisfail,Mid-shelf,10.2,0.0,50
+2023,Peart Reef,IN,Innisfail,Mid-shelf,27.188,0.0,52
+2019,Feather Reef,IN,Innisfail,Mid-shelf,7.174,0.109,46
+2020,Feather Reef,IN,Innisfail,Mid-shelf,8.315,0.0,46
+2021,Feather Reef,IN,Innisfail,Mid-shelf,18.361,0.0,45
+2022,Feather Reef,IN,Innisfail,Mid-shelf,17.075,0.0,53
+2023,Feather Reef,IN,Innisfail,Mid-shelf,25.769,0.0,39
+2019,Ellison Reef,IN,Innisfail,Mid-shelf,9.312,0.0,69
+2019,Beaver Reef,IN,Innisfail,Mid-shelf,12.833,0.0,30
+2020,Farquharson Reef (No 1),IN,Innisfail,Mid-shelf,9.331,0.0,71
+2023,Farquharson Reef (No 1),IN,Innisfail,Mid-shelf,12.313,0.0,80
+2020,Taylor Reef,IN,Innisfail,Mid-shelf,7.727,0.0,55
+2022,Taylor Reef,IN,Innisfail,Mid-shelf,13.852,0.0,61
+2023,Taylor Reef,IN,Innisfail,Mid-shelf,14.873,0.0,59
+2020,Hedley Reef,IN,Innisfail,Outer,6.047,0.0,74
+2023,Hedley Reef,IN,Innisfail,Outer,15.391,0.0,64
+2021,Wardle Reef,IN,Innisfail,Outer,12.974,0.0,58
+2020,Osborne Reef,PC,Princess Charlotte Bay,Inner,3.476,0.0,41
+2023,Osborne Reef,PC,Princess Charlotte Bay,Inner,9.881,0.0,42
+2021,13063S,PC,Princess Charlotte Bay,Mid-shelf,13.347,0.0,62
+2020,13093A,PC,Princess Charlotte Bay,Mid-shelf,7.105,0.0,19
+2020,Hedge Reef,PC,Princess Charlotte Bay,Mid-shelf,2.875,0.0,40
+2019,13124S,PC,Princess Charlotte Bay,Mid-shelf,19.228,0.0,68
+2020,13124S,PC,Princess Charlotte Bay,Mid-shelf,20.544,0.129,62
+2021,13124S,PC,Princess Charlotte Bay,Mid-shelf,24.978,0.0,58
+2022,13124S,PC,Princess Charlotte Bay,Mid-shelf,31.438,0.0,60
+2023,13124S,PC,Princess Charlotte Bay,Mid-shelf,36.028,0.0,62
+2019,Corbett Reef,PC,Princess Charlotte Bay,Mid-shelf,14.1,0.0,100
+2020,Corbett Reef,PC,Princess Charlotte Bay,Mid-shelf,10.3,0.0,100
+2021,Corbett Reef,PC,Princess Charlotte Bay,Mid-shelf,25.052,0.0,97
+2022,Corbett Reef,PC,Princess Charlotte Bay,Mid-shelf,30.462,0.0,92
+2023,Corbett Reef,PC,Princess Charlotte Bay,Mid-shelf,26.829,0.0,108
+2019,13040S,PC,Princess Charlotte Bay,Outer,27.436,0.0,39
+2020,13040S,PC,Princess Charlotte Bay,Outer,16.556,0.0,49
+2021,13040S,PC,Princess Charlotte Bay,Outer,35.25,0.0,45
+2019,Sand Bank No 8 Reef,PC,Princess Charlotte Bay,Outer,19.135,0.0,26
+2021,Sand Bank No 8 Reef,PC,Princess Charlotte Bay,Outer,24.75,0.0,35
+2023,Sand Bank No 8 Reef,PC,Princess Charlotte Bay,Outer,43.4,0.0,25
+2019,Creech Reef (North),PC,Princess Charlotte Bay,Outer,34.943,0.045,44
+2020,Creech Reef (North),PC,Princess Charlotte Bay,Outer,39.189,0.0,37
+2021,Creech Reef (North),PC,Princess Charlotte Bay,Outer,38.993,0.0,36
+2023,Creech Reef (North),PC,Princess Charlotte Bay,Outer,46.969,0.0,40
+2019,13121S,PC,Princess Charlotte Bay,Outer,8.397,0.0,39
+2021,13121S,PC,Princess Charlotte Bay,Outer,22.386,0.0,33
+2023,13121S,PC,Princess Charlotte Bay,Outer,29.421,0.0,41
+2019,Rodda Reef,PC,Princess Charlotte Bay,Outer,26.969,0.0,40
+2021,Rodda Reef,PC,Princess Charlotte Bay,Outer,40.208,0.0,36
+2022,Rodda Reef,PC,Princess Charlotte Bay,Outer,52.195,0.0,41
+2023,Rodda Reef,PC,Princess Charlotte Bay,Outer,38.819,0.0,36
+2019,Davie Reef,PC,Princess Charlotte Bay,Outer,27.5,0.02,51
+2020,Davie Reef,PC,Princess Charlotte Bay,Outer,24.439,0.0,49
+2021,Davie Reef,PC,Princess Charlotte Bay,Outer,32.358,0.0,44
+2022,Davie Reef,PC,Princess Charlotte Bay,Outer,38.169,0.0,43
+2023,Davie Reef,PC,Princess Charlotte Bay,Outer,37.075,0.0,50
+2021,Tydeman Reef,PC,Princess Charlotte Bay,Outer,23.404,0.0,65
+2022,Tydeman Reef,PC,Princess Charlotte Bay,Outer,36.404,0.0,57
+2023,Tydeman Reef,PC,Princess Charlotte Bay,Outer,31.395,0.0,69
+2019,Sand Bank No 1 Reef,PC,Princess Charlotte Bay,Outer,14.464,0.0,42
+2020,Sand Bank No 1 Reef,PC,Princess Charlotte Bay,Outer,25.658,0.0,38
+2021,Sand Bank No 1 Reef,PC,Princess Charlotte Bay,Outer,32.5,0.0,45
+2022,Sand Bank No 1 Reef,PC,Princess Charlotte Bay,Outer,52.928,0.0,38
+2023,Sand Bank No 1 Reef,PC,Princess Charlotte Bay,Outer,34.551,0.0,39
+2023,Cannan Reef,PO,Pompey,Mid-shelf,17.024,0.0,21
+2019,Credlin Reefs (East),PO,Pompey,Mid-shelf,13.255,0.0,53
+2021,Credlin Reefs (East),PO,Pompey,Mid-shelf,12.287,0.0,47
+2023,Credlin Reefs (East),PO,Pompey,Mid-shelf,11.27,0.0,62
+2019,Creal Reef,PO,Pompey,Mid-shelf,25.45,0.0,25
+2021,Creal Reef,PO,Pompey,Mid-shelf,47.596,0.0,26
+2020,Tern Reef(20309),PO,Pompey,Mid-shelf,26.964,0.0,28
+2022,Tern Reef(20309),PO,Pompey,Mid-shelf,36.328,0.0,32
+2023,Tern Reef(20309),PO,Pompey,Mid-shelf,32.574,15.706,34
+2022,20348S,PO,Pompey,Mid-shelf,31.547,0.0,59
+2023,20348S,PO,Pompey,Mid-shelf,31.706,0.0,63
+2020,Pompey Reef (No 1),PO,Pompey,Mid-shelf,32.05,0.0,50
+2022,Pompey Reef (No 1),PO,Pompey,Mid-shelf,26.642,0.0,51
+2023,Pompey Reef (No 1),PO,Pompey,Mid-shelf,34.013,0.0,57
+2020,Pompey Reef (No 2),PO,Pompey,Mid-shelf,10.208,0.0,36
+2022,Pompey Reef (No 2),PO,Pompey,Mid-shelf,15.724,0.0,38
+2023,Pompey Reef (No 2),PO,Pompey,Mid-shelf,16.611,0.0,45
+2020,20353S,PO,Pompey,Mid-shelf,45.7,0.0,25
+2023,20353S,PO,Pompey,Mid-shelf,60.323,0.0,31
+2022,20354S,PO,Pompey,Mid-shelf,42.644,0.038,26
+2023,20354S,PO,Pompey,Mid-shelf,48.58,0.0,22
+2020,Penrith Reef,PO,Pompey,Mid-shelf,17.076,0.0,56
+2020,21060S,PO,Pompey,Mid-shelf,10.238,0.0,21
+2022,21060S,PO,Pompey,Mid-shelf,27.431,0.0,18
+2023,21060S,PO,Pompey,Mid-shelf,34.881,0.0,21
+2023,21062S,PO,Pompey,Mid-shelf,34.851,0.024,42
+2020,21064S,PO,Pompey,Mid-shelf,6.667,1.875,24
+2023,21064S,PO,Pompey,Mid-shelf,22.2,0.0,25
+2020,21139S,PO,Pompey,Mid-shelf,57.063,0.017,60
+2022,21139S,PO,Pompey,Mid-shelf,61.159,0.0,55
+2023,21139S,PO,Pompey,Mid-shelf,62.48,0.0,62
+2020,21187S,PO,Pompey,Mid-shelf,40.417,0.643,42
+2022,21187S,PO,Pompey,Mid-shelf,52.554,0.109,46
+2023,21187S,PO,Pompey,Mid-shelf,52.083,0.311,45
+2020,21591S,PO,Pompey,Mid-shelf,15.962,0.0,26
+2022,21591S,PO,Pompey,Mid-shelf,21.848,0.0,23
+2023,21591S,PO,Pompey,Mid-shelf,29.107,0.0,28
+2020,Ben Reef,PO,Pompey,Outer,41.667,0.0,12
+2021,Ben Reef,PO,Pompey,Outer,59.792,0.0,12
+2023,Ben Reef,PO,Pompey,Outer,45.804,0.0,14
+2020,21245S,SW,Swain,Mid-shelf,28.18,0.035,57
+2023,21245S,SW,Swain,Mid-shelf,43.706,0.018,57
+2020,21278S,SW,Swain,Mid-shelf,32.176,0.0,27
+2019,21529S,SW,Swain,Mid-shelf,42.632,0.0,38
+2021,21529S,SW,Swain,Mid-shelf,52.227,0.0,32
+2022,21529S,SW,Swain,Mid-shelf,54.181,0.0,29
+2020,21550S,SW,Swain,Mid-shelf,45.988,0.0,43
+2019,Gannett Cay Reef,SW,Swain,Mid-shelf,31.75,3.8,20
+2021,Gannett Cay Reef,SW,Swain,Mid-shelf,23.594,14.542,24
+2022,Gannett Cay Reef,SW,Swain,Mid-shelf,6.053,6.316,19
+2023,Gannett Cay Reef,SW,Swain,Mid-shelf,3.194,2.167,18
+2020,Small Lagoon Reef,SW,Swain,Mid-shelf,24.946,4.13,46
+2022,Small Lagoon Reef,SW,Swain,Mid-shelf,7.571,1.229,35
+2020,Jenkins Reef,SW,Swain,Mid-shelf,2.5,0.026,39
+2022,Jenkins Reef,SW,Swain,Mid-shelf,3.966,0.207,29
+2020,Wade Reef,SW,Swain,Mid-shelf,2.845,0.103,29
+2022,Wade Reef,SW,Swain,Mid-shelf,7.609,0.0,23
+2023,Wade Reef,SW,Swain,Mid-shelf,11.563,0.042,24
+2020,22084S,SW,Swain,Mid-shelf,43.938,2.9,20
+2022,22084S,SW,Swain,Mid-shelf,9.028,0.0,18
+2019,Snake (22088),SW,Swain,Mid-shelf,33.168,0.102,88
+2021,Snake (22088),SW,Swain,Mid-shelf,36.133,2.313,96
+2022,Snake (22088),SW,Swain,Mid-shelf,23.577,3.457,94
+2019,Chinaman Reef(22102),SW,Swain,Mid-shelf,4.397,1.931,29
+2020,Chinaman Reef(22102),SW,Swain,Mid-shelf,4.474,3.447,38
+2021,Chinaman Reef(22102),SW,Swain,Mid-shelf,17.056,0.032,31
+2022,Chinaman Reef(22102),SW,Swain,Mid-shelf,28.208,0.0,30
+2023,Chinaman Reef(22102),SW,Swain,Mid-shelf,20.313,0.031,32
+2019,Horseshoe,SW,Swain,Mid-shelf,3.265,4.329,85
+2021,Horseshoe,SW,Swain,Mid-shelf,3.705,1.036,83
+2022,Horseshoe,SW,Swain,Mid-shelf,6.591,0.341,88
+2023,Horseshoe,SW,Swain,Mid-shelf,8.83,0.245,94
+2023,21296S,SW,Swain,Outer,30.625,0.0,36
+2021,East Cay Reef,SW,Swain,Outer,48.295,0.436,55
+2022,East Cay Reef,SW,Swain,Outer,45.653,0.522,67
+2023,East Cay Reef,SW,Swain,Outer,33.068,0.364,66
+2022,21558S,SW,Swain,Outer,49.821,0.19,42
+2023,21558S,SW,Swain,Outer,39.314,0.0,51
+2019,Turner Reef,SW,Swain,Outer,5.536,4.393,56
+2021,Turner Reef,SW,Swain,Outer,15.932,0.051,59
+2022,Turner Reef,SW,Swain,Outer,11.579,0.0,57
+2023,Turner Reef,SW,Swain,Outer,10.778,0.0,53
+2023,Havannah Reef,TO,Townsville,Inner,25.806,0.0,31
+2020,Kelso Reef,TO,Townsville,Mid-shelf,32.822,0.136,66
+2021,Kelso Reef,TO,Townsville,Mid-shelf,26.729,0.0,60
+2022,Kelso Reef,TO,Townsville,Mid-shelf,40.182,0.0,55
+2023,Kelso Reef,TO,Townsville,Mid-shelf,37.313,0.0,60
+2020,Little Kelso Reef,TO,Townsville,Mid-shelf,14.492,0.031,32
+2021,Little Kelso Reef,TO,Townsville,Mid-shelf,24.556,0.0,31
+2023,Little Kelso Reef,TO,Townsville,Mid-shelf,26.912,0.029,34
+2019,Rib Reef,TO,Townsville,Mid-shelf,13.882,0.0,38
+2020,Rib Reef,TO,Townsville,Mid-shelf,8.047,0.0,32
+2021,Rib Reef,TO,Townsville,Mid-shelf,10.0,0.0,37
+2022,Rib Reef,TO,Townsville,Mid-shelf,24.441,0.0,38
+2023,Rib Reef,TO,Townsville,Mid-shelf,21.694,0.0,31
+2020,Roxburgh Reef,TO,Townsville,Mid-shelf,34.674,0.0,23
+2023,Roxburgh Reef,TO,Townsville,Mid-shelf,31.65,0.0,25
+2019,John Brewer Reef,TO,Townsville,Mid-shelf,17.703,0.035,86
+2020,John Brewer Reef,TO,Townsville,Mid-shelf,13.333,0.0,75
+2021,John Brewer Reef,TO,Townsville,Mid-shelf,23.906,0.0,80
+2022,John Brewer Reef,TO,Townsville,Mid-shelf,23.225,0.0,81
+2023,John Brewer Reef,TO,Townsville,Mid-shelf,25.688,0.0,80
+2020,Helix Reef,TO,Townsville,Mid-shelf,49.25,0.0,15
+2023,Helix Reef,TO,Townsville,Mid-shelf,53.603,0.0,17
+2020,Grub Reef(18077),TO,Townsville,Mid-shelf,12.843,0.0,52
+2020,Centipede Reef,TO,Townsville,Mid-shelf,14.216,0.015,67
+2021,Wheeler Reef,TO,Townsville,Mid-shelf,69.375,0.0,22
+2023,Wheeler Reef,TO,Townsville,Mid-shelf,65.95,0.0,25
+2019,Davies Reef,TO,Townsville,Mid-shelf,31.332,0.022,46
+2021,Davies Reef,TO,Townsville,Mid-shelf,41.699,0.0,39
+2022,Davies Reef,TO,Townsville,Mid-shelf,52.898,0.0,44
+2023,Davies Reef,TO,Townsville,Mid-shelf,48.958,0.0,42
+2021,Saville-Kent Reef,TO,Townsville,Mid-shelf,16.125,0.0,60
+2019,Myrmidon Reef,TO,Townsville,Outer,24.122,0.0,47
+2020,Myrmidon Reef,TO,Townsville,Outer,17.65,0.0,52
+2021,Myrmidon Reef,TO,Townsville,Outer,38.375,0.0,50
+2022,Myrmidon Reef,TO,Townsville,Outer,45.875,0.0,50
+2023,Myrmidon Reef,TO,Townsville,Outer,49.016,0.0,47
+2019,Dip Reef,TO,Townsville,Outer,16.806,0.0,45
+2021,Dip Reef,TO,Townsville,Outer,22.304,0.0,51
+2022,Dip Reef,TO,Townsville,Outer,26.397,0.0,51
+2023,Dip Reef,TO,Townsville,Outer,33.011,0.0,44
+2020,Knife Reef,TO,Townsville,Outer,28.78,0.0,42
+2022,Knife Reef,TO,Townsville,Outer,48.911,0.0,31
+2020,Fork Reef,TO,Townsville,Outer,35.811,0.0,37
+2020,Chicken Reef,TO,Townsville,Outer,22.104,0.0,41
+2021,Chicken Reef,TO,Townsville,Outer,32.306,0.0,45
+2022,Chicken Reef,TO,Townsville,Outer,38.804,0.0,46
+2023,Chicken Reef,TO,Townsville,Outer,35.806,0.0,45
+2021,Hayman Island Reef,WH,Whitsunday,Inner,9.615,0.0,26
+2022,Hayman Island Reef,WH,Whitsunday,Inner,21.453,0.0,37
+2023,Hayman Island Reef,WH,Whitsunday,Inner,15.096,0.0,39
+2021,Langford-Bird Reef,WH,Whitsunday,Inner,6.121,0.0,29
+2023,Langford-Bird Reef,WH,Whitsunday,Inner,12.578,0.0,32
+2021,Border Island Reef (No 1),WH,Whitsunday,Inner,6.462,0.0,53
+2022,Border Island Reef (No 1),WH,Whitsunday,Inner,10.818,0.0,55
+2023,Border Island Reef (No 1),WH,Whitsunday,Inner,10.227,0.0,66
+2019,19131S,WH,Whitsunday,Mid-shelf,14.185,0.0,46
+2021,19131S,WH,Whitsunday,Mid-shelf,16.702,0.0,47
+2022,19131S,WH,Whitsunday,Mid-shelf,34.423,0.0,52
+2023,19131S,WH,Whitsunday,Mid-shelf,26.13,0.0,52
+2021,Hardy Reef,WH,Whitsunday,Mid-shelf,36.006,0.0,123
+2022,Hardy Reef,WH,Whitsunday,Mid-shelf,36.056,0.022,135
+2023,Hardy Reef,WH,Whitsunday,Mid-shelf,34.456,0.008,131
+2019,19138S,WH,Whitsunday,Mid-shelf,17.155,0.0,29
+2021,19138S,WH,Whitsunday,Mid-shelf,22.411,0.036,28
+2022,19138S,WH,Whitsunday,Mid-shelf,24.784,0.034,29
+2023,19138S,WH,Whitsunday,Mid-shelf,19.643,0.0,28
+2021,20104S,WH,Whitsunday,Mid-shelf,33.207,0.0,23
+2022,20104S,WH,Whitsunday,Mid-shelf,31.042,0.0,24
+2023,20104S,WH,Whitsunday,Mid-shelf,15.0,0.0,28
+2019,Slate Reef,WH,Whitsunday,Outer,27.0,0.0,40
+2021,Slate Reef,WH,Whitsunday,Outer,45.449,0.0,39
+2022,Slate Reef,WH,Whitsunday,Outer,60.329,0.0,38
+2023,Slate Reef,WH,Whitsunday,Outer,61.48,0.0,38
+2021,Hyde Reef,WH,Whitsunday,Outer,51.094,0.0,48
+2022,Hyde Reef,WH,Whitsunday,Outer,59.275,0.0,50
+2023,Hyde Reef,WH,Whitsunday,Outer,53.075,0.0,50
+2019,Rebe Reef,WH,Whitsunday,Outer,35.188,0.0,40
+2021,Rebe Reef,WH,Whitsunday,Outer,58.857,0.0,35
+2022,Rebe Reef,WH,Whitsunday,Outer,56.5,0.0,40
+2023,Rebe Reef,WH,Whitsunday,Outer,59.291,0.0,37

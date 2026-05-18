@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(230, 230, 230);
+}
+
 .page {
   width: 1000px;
   background: white;
@@ -48,4 +52,110 @@
   line-height: 1.65;
   margin-bottom: 0px;
   font-family: var(--sans);
+}
+
+.d {
+  font-family: var(--sans);
+  line-height: 1.65;
+  color: rgb(89, 89, 89);
+}
+
+.note {
+  border-left: 3px solid;
+  background-color: rgb(241, 240, 240);
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.caption {
+  font-weight: 800;
+  color: black;
+}
+
+.vis1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.vis1-c {
+  border: 1px solid rgb(192, 192, 192);
+  padding: 10px;
+}
+
+.vis1-d {
+  padding-left: 30px;
+  font-family: var(--sans);
+  line-height: 1.65;
+  color: rgb(51, 51, 51);
+}
+
+.fig-metadata {
+  font-size: 0.8rem;
+  color: rgb(79, 79, 79);
+}
+
+.section-2 {
+  border-top: 3px solid rgb(182, 182, 182);
+  margin-top: 30px;
+}
+
+.sec2-title {
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: var(--serif);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.vis2 {
+  border-top: 1px solid rgb(192, 192, 192);
+  border-bottom: 1px solid rgb(192, 192, 192);
+  padding: 7px 0;
+}
+
+.m2 {
+  text-align: center;
+  width: 100%;
+}
+
+.grid-2 {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid rgb(177, 177, 177);
+  padding-bottom: 20px;
+}
+
+.left-2 {
+  padding-right: 60px;
+}
+
+.v3-c {
+  border: 1px solid rgb(179, 179, 179);
+  padding: 10px;
+}
+.sec5 {
+  border-bottom: 3px solid rgb(177, 177, 177);
+}
+.sec5-t {
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: var(--serif);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.vis5-c {
+  border: 1px solid rgb(172, 172, 172);
+  padding: 10px;
+  padding-right: 0px;
+}
+
+.vis6-c {
+  border: 1px solid rgb(172, 172, 172);
+  width: 600px;
+  padding: 10px;
+}
+
+.nd {
+  border: none;
 }

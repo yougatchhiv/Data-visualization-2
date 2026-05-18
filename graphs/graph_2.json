@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Figure 2. Annual Visitations by Permit Type, 2016–2025",
+    "subtitle": "COVID-19 caused a 66% drop in 2020. Full-day trips consistently dominate.",
+    "fontSize": 14,
+    "subtitleFontSize": 11,
+    "anchor": "start"
+  },
+  "width": 720,
+  "height": 300,
+  "data": { "url": "data/GBRMP_VisitationsAll_annual.csv" },
+  "transform": [
+    {
+      "fold": [
+        "Full Day",
+        "Part Day",
+        "Scenic Flights",
+        "Coral Viewing",
+        "Exempt"
+      ],
+      "as": ["Visit Type", "Count"]
+    }
+  ],
+  "mark": { "type": "area", "interpolate": "monotone" },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Count",
+      "type": "quantitative",
+      "stack": "zero",
+      "axis": {
+        "title": "Number of Visits",
+        "format": "~s",
+        "labelFontSize": 11
+      }
+    },
+    "color": {
+      "field": "Visit Type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Full Day",
+          "Part Day",
+          "Scenic Flights",
+          "Coral Viewing",
+          "Exempt"
+        ],
+        "range": ["#1a3f5c", "#2e6da4", "#5ba3d0", "#8dc4e5", "#c1dff0"]
+      },
+      "legend": { "orient": "right" }
+    },
+    "tooltip": [
+      { "field": "Year", "type": "ordinal" },
+      { "field": "Visit Type", "type": "nominal" },
+      {
+        "field": "Count",
+        "type": "quantitative",
+        "title": "Visits",
+        "format": ","
+      }
+    ]
+  }
+}

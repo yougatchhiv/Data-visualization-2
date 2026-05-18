@@ -1,54 +1,264 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Great Barrier Reef</title>
 
-    <!-- Import pure.css -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-      integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
-      crossorigin="anonymous"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Great Barrier Reef</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-    <!-- CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-  </head>
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
-    <div class="page">
-      <!-- title section  -->
-      <div class="title">
-        <div class="title_cont">
-          <div class="top">
-            <div>
-              <p class="sub-title">GREAT BARRIER REEF MARINE PARK</p>
-            </div>
-            <div>
-              <p class="main-title">Beneath the Surface: The Reef in Numbers</p>
-            </div>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+</head>
+
+<body>
+  <div class="page">
+    <!-- title section  -->
+    <div class="title">
+      <div class="title_cont">
+        <div class="top">
+          <div>
+            <p class="sub-title">GREAT BARRIER REEF MARINE PARK</p>
           </div>
           <div>
-            <p class="bottom">
-              Three decades of reef health surveys and ten years of visitor
-              records, brought together to tell a story of resilience, pressure,
-              and uncertain recovery across the world's largest coral reef
-              system. Data: AIMS Long-Term Monitoring Program (1993-2023) and
-              GBRMPA Permit Holder Reporting System (2016-2025).
+            <p class="main-title">Beneath the Surface: The Reef in Numbers</p>
+          </div>
+        </div>
+        <div>
+          <p class="bottom">
+            Three decades of reef health surveys and ten years of visitor
+            records, brought together to tell a story of resilience, pressure,
+            and uncertain recovery across the world's largest coral reef
+            system. Data: AIMS Long-Term Monitoring Program (1993-2023) and
+            GBRMPA Permit Holder Reporting System (2016-2025).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- first section  -->
+    <div class="section-1">
+      <div class="vis1">
+        <div class="vis1-c">
+          <div id="vis1" class="vis-container"></div>
+        </div>
+        <div class="vis1-d d">
+          <p>
+            The GBRMP spans Queensland's coastline from Cape York to
+            Bundaberg, organised into four management areas and eleven
+            monitoring sectors. Each year, AIMS researchers conduct
+            standardised manta-tow surveys, slow passes above a reef transect,
+            recording live coral, dead coral, and predator counts.
+          </p>
+          <p>
+            The map shows average live coral cover per reef across five recent
+            survey years (2018-2023). The colour scale runs from red (below
+            10%) through amber to green (above 40%). Use the sector dropdown
+            to focus on any one region.
+          </p>
+          <p class="note">
+            2016 bleaching: The northern third of the reef lost roughly half
+            its coral — the most severe bleaching event since monitoring
+            began. — AIMS Annual Report, 2017
+          </p>
+          <p>
+            Outer-shelf reefs generally carry higher coral cover, but their
+            exposure to open-ocean thermal anomalies makes them most
+            vulnerable during El Niño years.
+          </p>
+        </div>
+      </div>
+      <p class="fig-metadata">
+        <span class="caption">source: </span> AIMS Long-Term Monitoring
+        Program (2018-2023)
+      </p>
+    </div>
+
+    <!-- Second section  -->
+    <div class="section-2">
+      <p class="sec2-title">Millions of visitors, Five Type of Experience</p>
+      <p class="sec2-d d">
+        Visitor access to the GBRMP is recorded through a permit system.
+        Full-day trips dominate, accounting for roughly 66% of recorded
+        visits. The chart below reveals the sharp discontinuity of 2020:
+        COVID-19 border closures reduced annual visitation by 66%, from 2.4
+        million to under one million. Recovery has been steady but uneven ever
+        since.
+      </p>
+      <div class="vis2">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+      <p class="fig-metadata m2">
+        <span class="caption">source: </span> GBRMPA Permit Holder Reporting
+        System (2016-2025)
+      </p>
+
+      <div>
+        <p class="d">
+          At its peak in 2016, the reef had <b>2.79</b> million visitors
+          across all permit types, the highest ever recorded. That number
+          collapsed dramatically in 2020 when <b>COVID-19</b> border closures
+          reduced visitation to just 956,000, a 66% decline. By 2025 the
+          industry had recovered largely, with 2.38 million visitors returning
+          to the reef. Of those 2025 visitors, 218,000 held coral-viewing
+          permits covering snorkelling and diving activities making them the
+          segment most directly dependent on a healthy, living reef but this
+          would also implies that if there were another major decline, they
+          are the most vulnerable to the change making tourism directly
+          related to the wellbeing of these reefs.
+        </p>
+        <!-- Third and Fourth section  -->
+        <div class="grid-2">
+          <div class="left-2">
+            <p class="d">
+              At the sub-regional level, Cairns/Cooktown and
+              Townsville/Whitsunday together account for over 90% of all
+              visitor activity. The Far Northern Area records fewer than
+              15,000 annual visits due to its remoteness from the Queensland
+              coast.
             </p>
+            <div class="v3-c">
+              <div id="vis3" class="vis-container"></div>
+            </div>
+            <p class="fig-metadata m2">
+              <span class="caption">source: </span> GBRMPA Permit Holder
+              Reporting System (2016-2025)
+            </p>
+          </div>
+          <div class="right-2">
+            <p class="d">
+              Full-day trips represent 66% of all 2025 visits. Coral-viewing
+              permits — snorkelling and diving — represent 9.2% and are the
+              category most directly dependent on a healthy reef to attract
+              bookings.
+            </p>
+            <div class="v4-c">
+              <div id="vis4" class="vis-container"></div>
+            </div>
+            <p class="fig-metadata m2">
+              <span class="caption">source: </span> GBRMPA Permit Holder
+              Reporting System (2016-2025)
+            </p>
+          </div>
+        </div>
+
+        <!-- Fifth section  -->
+        <div class="sec5">
+          <p class="sec5-t">
+            Coral Under Pressure: Thirty Years of Monitoring
+          </p>
+          <p class="d">
+            AIMS has surveyed the reef since 1993, producing the world’s
+            longest-running coral reef health time series. The trend is not a
+            simple decline — it is a story of stress and recovery, repeated at
+            shorter and shorter intervals. Each mass bleaching event leaves
+            the reef with less time to bounce back before the next thermal
+            anomaly arrives.
+          </p>
+          <div class="vis5-c">
+            <div id="vis5" class="vis-container"></div>
+          </div>
+          <p class="fig-metadata m2">
+            <span class="caption">source: </span> GBRMPA Permit Holder
+            Reporting System (2016-2025)
+          </p>
+          <p class="note d">
+            Key finding: Between 2020 and 2022 the reef recorded its highest
+            measured coral cover since monitoring began — 35.5% — before a
+            fourth bleaching event in early 2022 interrupted that recovery.
+          </p>
+          <p class='d'>
+            This timeline illustrates the escalating severity of mass coral bleaching events on the Great Barrier Reef
+            across three distinct periods. The first events in 1998 and 2002 were driven by El Niño-induced ocean
+            warming, but the
+            reef demonstrated a capacity for recovery during the gaps between them. The situation worsened dramatically
+            in
+            2016 and 2017 when back-to-back bleaching events — the worst ever recorded — struck the northern sectors in
+            consecutive
+            years, destroying roughly half the coral in those regions with no recovery time in between. The most
+            alarming development came
+            in 2020 and 2022, when bleaching occurred during a La Niña period — traditionally associated with cooler
+            ocean
+            temperatures that give the reef relief — signalling that the reef has crossed a dangerous new threshold of
+            vulnerability
+            where even historically safe climate conditions can no longer be relied upon to prevent bleaching.
+          </p>
+          <div class="grid-2 nd">
+            <div class="left-2">
+              <p class="d">
+                The heatmap shows average live coral cover per sector per year. The 2016 bleaching is strikingly visible
+                as a column of pale cells across the northern sectors — Cooktown, Cairns, Innisfail — which had been
+                among the healthiest in the dataset. Sectors are ordered north (top) to south (bottom). Blank cells
+                indicate no surveys that year.
+              </p>
+            </div>
+            <div class="right-2">
+              <div class="vis6-c">
+                <div id="vis6" class="vis-container"></div>
+              </div>
+              <p class="fig-metadata m2">
+                <span class="caption">source: </span> GBRMPA Permit Holder
+                Reporting System (2016-2025)
+              </p>
+            </div>
+          </div>
+          <div class="grid-2 nd">
+            <div class="left-2">
+              <div class="vis6-c">
+                <div id="vis7" class="vis-container"></div>
+              </div>
+              <p class="fig-metadata m2">
+                <span class="caption">source: </span> GBRMPA Permit Holder
+                Reporting System (2016-2025)
+              </p>
+            </div>
+            <div class="right-2">
+              <p class="d">
+                Inner-shelf reefs are persistently suppressed by coastal runoff and agricultural sediment. Outer-shelf
+                reefs carry higher cover on average but are most exposed to open-ocean warming that drives bleaching.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+
+    <script type="text/javascript">
+      var vis1 = "graphs/graph_1.json";
+      var vis2 = "graphs/graph_2.json";
+      var vis3 = "graphs/graph_3.json";
+      var vis4 = "graphs/graph_4.json";
+      var vis5 = "graphs/graph_5.json";
+      var vis6 = "graphs/graph_6.json";
+      var vis7 = "graphs/graph_7.json";
+      var vis8 = "graphs/graph_8.json";
+      var vis9 = "graphs/graph_9.json";
+      var vis10 = "graphs/graph_10.json";
+      var vis11 = "graphs/graph_11.json";
+
+      vegaEmbed("#vis1", vis1, { actions: false });
+      vegaEmbed("#vis2", vis2, { actions: false });
+      vegaEmbed("#vis3", vis3, { actions: false });
+      vegaEmbed("#vis4", vis4, { actions: false });
+      vegaEmbed("#vis5", vis5, { actions: false });
+      vegaEmbed("#vis6", vis6, { actions: false });
+      vegaEmbed("#vis7", vis7, { actions: false });
+    </script>
+</body>
+
 </html>

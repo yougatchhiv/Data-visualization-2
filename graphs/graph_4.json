@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Figure 4. Visiter types",
+    "subtitle": "Proportion of each permit category",
+    "fontSize": 14,
+    "subtitleFont": 11,
+    "anchor": "start"
+  },
+  "width": 400,
+  "height": 400,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "data": { "url": "data/GBRMP_VisitationsAll_2025_long.csv" },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 65,
+    "outerRadius": 120,
+    "stroke": "white",
+    "strokeWidth": 1.5
+  },
+  "encoding": {
+    "theta": {
+      "field": "visits",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Full Day",
+          "Part Day",
+          "Exempt",
+          "Coral Viewing",
+          "Scenic Flights"
+        ],
+        "range": ["#1a3f5c", "#2e6da4", "#5ba3d0", "#8dc4e5", "#c1dff0"]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "type",
+        "type": "nominal",
+        "title": "Visit Type"
+      },
+      {
+        "field": "visits",
+        "type": "quantitative",
+        "title": "Visits (2025)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Figure 6. Heatmap of the average live coral cover by sector and year",
+    "subtitle": "Average coral across all reefs in that sector",
+    "fontSize": 14,
+    "subtitleFontSize": 11,
+    "anchor": "start"
+  },
+  "width": 550,
+  "height": 400,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "data": { "url": "data/AIMS_MantatowByReef_coralBySector.csv" },
+  "transform": [{ "filter": "datum.Year >= 2010" }],
+  "mark": { "type": "rect" },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "axis": {
+        "title": "Year",
+        "labelAngle": -20
+      }
+    },
+    "y": {
+      "field": "Sector_Name",
+      "type": "nominal",
+      "sort": [
+        "Cooktown/Lizard Is.",
+        "Cairns",
+        "Innisfail",
+        "Townsville",
+        "Whitsunday",
+        "Central",
+        "Princess Charlotte Bay",
+        "Pompey",
+        "Swain",
+        "Capricorn-Bunker",
+        "Capricorn"
+      ],
+      "axis": {
+        "title": "Sector"
+      }
+    },
+    "color": {
+      "field": "Avg_Live_Coral",
+      "type": "quantitative",
+      "title": " Avg Coral (%))",
+      "scale": {
+        "type": "linear",
+        "scheme": "greens",
+        "domain": [0, 50]
+      },
+      "legend": {
+        "orient": "right",
+        "gradientLength": 120
+      }
+    },
+    "tooltip": [
+      { "field": "Sector_Name", "type": "nominal", "title": "Sector" },
+      { "field": "Year", "type": "ordinal" },
+      {
+        "field": "Avg_Live_Coral",
+        "type": "quantitative",
+        "title": "Avg Live Coral (%)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

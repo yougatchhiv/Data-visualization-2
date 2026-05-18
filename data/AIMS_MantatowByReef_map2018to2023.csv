@@ -1,0 +1,184 @@
+REEF_ID,REEF_NAME,SECTOR,SECTOR_NAME,SHELF,SHELF_NAME,LATITUDE,LONGITUDE,AVG_LIVE_CORAL,AVG_COTS,SURVEYS
+11016S,Mcsweeney Reef,CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.0275,143.251,8.36,0.104,4
+11029S,Monsoon Reef,CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.133333,143.258333,13.14,0.071,4
+11049S,11049S,CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.358333,143.333333,10.63,0.232,5
+11162S,11162S,CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.6,143.291667,19.4,0.016,4
+11211S,Pearson Reef,CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.566667,143.716667,20.23,0.0,4
+11222S2,Middle Banks (2),CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.763333,143.651667,52.17,0.0,5
+11222S3,Middle Banks B (3),CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.771667,143.658333,59.74,0.017,5
+11237A,Ashmore Banks (1),CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.885167,143.629333,56.01,0.0,5
+11237B,Ashmore Banks (2),CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.88,143.709833,61.86,0.0,5
+11237C,Ashmore Banks (3),CG,Cooktown/Lizard Is.,M,Mid-shelf,-11.926667,143.688167,58.85,0.0,5
+12027B,Quoin Reef(12027),CG,Cooktown/Lizard Is.,M,Mid-shelf,-12.4,143.533333,23.75,0.0,1
+12056S,Mantis Reef,CG,Cooktown/Lizard Is.,O,Outer,-12.275,143.891667,28.64,0.0,5
+12061S,Lagoon Reef,CG,Cooktown/Lizard Is.,O,Outer,-12.391667,143.741667,39.76,0.0,5
+12071S,12071S,CG,Cooktown/Lizard Is.,O,Outer,-12.483333,143.75,35.3,0.0,3
+12098S,Second Small Reef,CG,Cooktown/Lizard Is.,O,Outer,-12.566667,143.775,34.36,0.0,3
+12102S,Curd Reef,CG,Cooktown/Lizard Is.,I,Inner,-12.591667,143.55,16.2,0.0,2
+12107S,Log Reef (South),CG,Cooktown/Lizard Is.,O,Outer,-12.675,143.841667,26.54,0.0,1
+13006S,Osborne Reef,PC,Princess Charlotte Bay,I,Inner,-13.041667,143.625,6.68,0.0,2
+13040S,13040S,PC,Princess Charlotte Bay,O,Outer,-13.266667,143.941667,26.41,0.0,3
+13056S,Sand Bank No 8 Reef,PC,Princess Charlotte Bay,O,Outer,-13.358333,143.958333,29.09,0.0,3
+13063S,13063S,PC,Princess Charlotte Bay,M,Mid-shelf,-13.416667,143.816667,13.35,0.0,1
+13093A,13093A,PC,Princess Charlotte Bay,M,Mid-shelf,-13.758333,143.991667,7.11,0.0,1
+13108S,Hedge Reef,PC,Princess Charlotte Bay,M,Mid-shelf,-13.908333,143.958333,2.88,0.0,1
+13118A,Creech Reef (North),PC,Princess Charlotte Bay,O,Outer,-13.625,144.108333,40.02,0.011,4
+13121S,13121S,PC,Princess Charlotte Bay,O,Outer,-13.783333,144.266667,20.07,0.0,3
+13124S,13124S,PC,Princess Charlotte Bay,M,Mid-shelf,-13.866667,144.091667,26.44,0.026,5
+13127S,Rodda Reef,PC,Princess Charlotte Bay,O,Outer,-13.925,144.366667,39.55,0.0,4
+13130S,Davie Reef,PC,Princess Charlotte Bay,O,Outer,-13.975,144.458333,31.91,0.004,5
+13133S,Tydeman Reef,PC,Princess Charlotte Bay,O,Outer,-13.983333,144.516667,30.4,0.0,3
+14016S,Corbett Reef,PC,Princess Charlotte Bay,M,Mid-shelf,-14.0,144.108333,21.35,0.0,5
+14045S,Sand Bank No 1 Reef,PC,Princess Charlotte Bay,O,Outer,-14.191667,144.916667,32.02,0.0,5
+14056S,14056S,CL,Central,M,Mid-shelf,-14.325,144.958333,8.25,0.0,1
+14075S,14075S,CL,Central,O,Outer,-14.283333,145.175,32.8,0.0,1
+14085S,Hilder Reef,CL,Central,O,Outer,-14.441667,145.408333,39.22,0.0,1
+14109S,Fly Reef,CL,Central,M,Mid-shelf,-14.5,145.158333,10.87,0.043,1
+14114S,Macgillivray Reef,CL,Central,M,Mid-shelf,-14.65,145.491667,20.8,0.012,5
+14116S,Lizard Island,CL,Central,M,Mid-shelf,-14.675,145.466667,15.83,0.005,4
+14118S,Eyrie Reef,CL,Central,M,Mid-shelf,-14.716667,145.375,29.85,0.0,1
+14123S,Martin Reef(14123),CL,Central,I,Inner,-14.766667,145.358333,24.76,0.019,4
+14126S,Linnet Reef,CL,Central,I,Inner,-14.783333,145.341667,22.01,0.017,5
+14135S,Helsdon Reef,CL,Central,M,Mid-shelf,-14.95,145.491667,27.71,0.0,1
+14137S,Carter Reef,CL,Central,O,Outer,-14.55,145.583333,21.61,0.0,4
+14138S,Yonge Reef,CL,Central,O,Outer,-14.6,145.625,23.66,0.0,4
+14139S,No Name Reef,CL,Central,O,Outer,-14.65,145.65,19.75,0.0,5
+14143S,North Direction Reef,CL,Central,M,Mid-shelf,-14.741667,145.508333,38.07,0.0,4
+14147A,South Direction Reef (North),CL,Central,M,Mid-shelf,-14.825,145.525,26.28,0.0,1
+14152S,No 10 Patches (No 2),CL,Central,O,Outer,-14.933333,145.683333,33.86,0.0,1
+14154S,Ribbon No 9 Reef,CL,Central,O,Outer,-14.991667,145.708333,28.06,0.0,1
+15009S,Forrester Reef,CL,Central,M,Mid-shelf,-15.166667,145.5,34.01,0.017,2
+15012S,Boulder Reef,CL,Central,I,Inner,-15.416667,145.425,28.74,0.0,2
+15013S,Egret Reef,CL,Central,I,Inner,-15.475,145.416667,12.48,0.0,2
+15024S,Mackay Reefs,CL,Central,M,Mid-shelf,-15.15,145.575,6.07,0.0,1
+15025S,Harrier Reef,CL,Central,O,Outer,-15.133333,145.691667,30.0,0.0,1
+15027S,Marx Reef,CL,Central,M,Mid-shelf,-15.2,145.616667,45.65,0.0,1
+15028S2,Startle (East),CL,Central,M,Mid-shelf,-15.208333,145.55,8.7,0.0,1
+15030S,Swinger Reef,CL,Central,M,Mid-shelf,-15.241667,145.533333,32.56,0.0,2
+15034S,15034S,CL,Central,O,Outer,-15.316667,145.766667,35.12,0.0,1
+15050S,Ribbon No 3 Reef,CL,Central,O,Outer,-15.483333,145.8,24.07,0.0,1
+15077S,15077S,CL,Central,M,Mid-shelf,-15.558333,145.65,25.91,0.0,1
+15080S,Ribbon No 1 Reef,CL,Central,O,Outer,-15.608333,145.8,35.3,0.0,1
+15084S,Irene Reef,CL,Central,M,Mid-shelf,-15.65,145.716667,19.88,0.0,1
+15085S,Lena Reef,CL,Central,O,Outer,-15.65,145.8,38.68,0.0,2
+15090S,Andersen Reef,CA,Cairns,O,Outer,-15.791667,145.8,31.51,0.0,2
+15092S,Rachel Carson Reef,CA,Cairns,O,Outer,-15.825,145.816667,25.47,0.0,2
+15093S,Pickersgill Reef,CA,Cairns,M,Mid-shelf,-15.875,145.583333,20.13,0.0,3
+15095S,Evening Reef,CA,Cairns,M,Mid-shelf,-15.908333,145.658333,21.33,0.007,3
+15098S,Morning Reef,CA,Cairns,M,Mid-shelf,-15.975,145.666667,28.47,0.0,1
+15099C,Agincourt Reefs (No 1),CA,Cairns,O,Outer,-16.05,145.858333,25.51,0.0,5
+16013A,16013A,CA,Cairns,M,Mid-shelf,-16.013333,145.791667,22.88,0.0,2
+16013B,16013B,CA,Cairns,M,Mid-shelf,-16.013333,145.8,44.94,0.0,2
+16013C,16013C,CA,Cairns,M,Mid-shelf,-16.03,145.803333,13.12,0.0,2
+16015S,Mackay Reef,CA,Cairns,M,Mid-shelf,-16.05,145.65,29.91,0.0,4
+16017S,16017S,CA,Cairns,M,Mid-shelf,-16.083333,145.725,13.83,0.0,1
+16019S,St Crispin Reef,CA,Cairns,O,Outer,-16.108333,145.833333,11.76,0.0,5
+16024S,Chinaman Reef(16024),CA,Cairns,M,Mid-shelf,-16.208333,145.8,10.74,0.0,1
+16025S2,Opal (2),CA,Cairns,O,Outer,-16.216667,145.891667,9.54,0.0,2
+16028S,Low Islands Reef,CA,Cairns,I,Inner,-16.383333,145.566667,29.08,0.0,5
+16030S,Norman Reef,CA,Cairns,O,Outer,-16.433333,146.0,18.25,0.0,2
+16044B,Vlasoff Reef,CA,Cairns,M,Mid-shelf,-16.65,146.0,4.92,0.0,1
+16049S,Green Island Reef,CA,Cairns,I,Inner,-16.758333,145.98,14.2,0.0,4
+16054S,Fitzroy Island Reef,CA,Cairns,I,Inner,-16.925,145.983333,33.5,0.0,3
+16057S,Hastings Reef,CA,Cairns,M,Mid-shelf,-16.516667,146.016667,12.54,0.0,6
+16060S,Michaelmas Reef,CA,Cairns,M,Mid-shelf,-16.583333,146.016667,10.45,0.0,3
+16064S,Arlington Reef,CA,Cairns,M,Mid-shelf,-16.716667,146.066667,8.08,0.0,2
+16065S,Flynn Reef,CA,Cairns,O,Outer,-16.733333,146.275,9.27,0.0,1
+16068S,Thetford Reef,CA,Cairns,M,Mid-shelf,-16.808333,146.191667,17.9,0.0,6
+16071S,Moore Reef,IN,Innisfail,M,Mid-shelf,-16.866667,146.233333,9.0,0.0,3
+17004S,Scott Reef,IN,Innisfail,M,Mid-shelf,-17.075,146.183333,9.71,0.0,1
+17014S,Hedley Reef,IN,Innisfail,O,Outer,-17.233333,146.483333,8.91,0.006,3
+17016S,Mcculloch,IN,Innisfail,M,Mid-shelf,-17.283333,146.45,3.89,0.0,2
+17024S,Peart Reef,IN,Innisfail,M,Mid-shelf,-17.483333,146.391667,12.36,0.109,4
+17032S,Wardle Reef,IN,Innisfail,O,Outer,-17.45,146.541667,12.97,0.0,1
+17034S,Feather Reef,IN,Innisfail,M,Mid-shelf,-17.533333,146.383333,14.11,0.037,6
+17044S,Ellison Reef,IN,Innisfail,M,Mid-shelf,-17.725,146.4,9.31,0.0,1
+17051S,Beaver Reef,IN,Innisfail,M,Mid-shelf,-17.85,146.483333,12.83,0.0,1
+17063A,Farquharson Reef (No 1),IN,Innisfail,M,Mid-shelf,-17.783333,146.516667,10.45,2.756,3
+17064S,Taylor Reef,IN,Innisfail,M,Mid-shelf,-17.833333,146.55,11.46,3.276,4
+18030S,Kelso Reef,TO,Townsville,M,Mid-shelf,-18.441667,146.991667,31.48,0.037,5
+18031S,Little Kelso Reef,TO,Townsville,M,Mid-shelf,-18.475,147.0,23.33,0.148,4
+18032S,Rib Reef,TO,Townsville,M,Mid-shelf,-18.483333,146.883333,15.25,0.985,6
+18034S,Myrmidon Reef,TO,Townsville,O,Outer,-18.266667,147.391667,35.01,0.0,5
+18039S,Dip Reef,TO,Townsville,O,Outer,-18.416667,147.458333,24.63,0.0,4
+18042S,Roxburgh Reef,TO,Townsville,M,Mid-shelf,-18.433333,147.066667,30.46,0.0,3
+18043S,Fore And Aft Reef,TO,Townsville,M,Mid-shelf,-18.5,147.033333,25.99,0.019,1
+18065S,Havannah Reef,TO,Townsville,I,Inner,-18.85,146.541667,25.81,0.0,1
+18075S,John Brewer Reef,TO,Townsville,M,Mid-shelf,-18.633333,147.058333,20.77,0.007,5
+18076S,Helix Reef,TO,Townsville,M,Mid-shelf,-18.633333,147.3,48.5,0.0,3
+18077S,Grub Reef(18077),TO,Townsville,M,Mid-shelf,-18.633333,147.425,10.95,0.0,2
+18081S,Knife Reef,TO,Townsville,O,Outer,-18.583333,147.558333,30.72,0.0,3
+18083S,Fork Reef,TO,Townsville,O,Outer,-18.616667,147.558333,29.37,0.071,2
+18086S,Chicken Reef,TO,Townsville,O,Outer,-18.658333,147.708333,29.52,0.0,5
+18088S,Centipede Reef,TO,Townsville,M,Mid-shelf,-18.725,147.541667,13.36,0.016,2
+18095S,Wheeler Reef,TO,Townsville,M,Mid-shelf,-18.808333,147.525,67.66,0.0,2
+18096S,Davies Reef,TO,Townsville,M,Mid-shelf,-18.825,147.641667,43.72,0.005,4
+18099S,Saville-Kent Reef,TO,Townsville,M,Mid-shelf,-18.858333,147.891667,16.12,0.0,1
+18112S,Viper Reef,CU,Capricorn,O,Outer,-18.866667,148.141667,48.1,0.0,1
+18118S,Shrimp Reef,CU,Capricorn,M,Mid-shelf,-18.95,148.083333,31.99,0.0,1
+18120S,Jaguar Reef,CU,Capricorn,O,Outer,-18.983333,148.425,42.39,0.0,2
+19019S,Bowden Reef,CU,Capricorn,M,Mid-shelf,-19.033333,147.933333,29.54,0.024,4
+19028S,Shell Reef,CU,Capricorn,M,Mid-shelf,-19.066667,148.183333,35.75,0.04,1
+19044S,Faith Reef,CU,Capricorn,M,Mid-shelf,-19.283333,148.35,29.87,0.072,2
+19046S,Hope Reef(19046),CU,Capricorn,M,Mid-shelf,-19.325,148.433333,17.58,0.0,1
+19047S,Charity Reef,CU,Capricorn,M,Mid-shelf,-19.366667,148.333333,17.69,0.0,1
+19061S,Jacqueline Reef,CU,Capricorn,O,Outer,-19.216667,148.9,34.94,0.0,1
+19063B,Kangaroo Reef (West),CU,Capricorn,M,Mid-shelf,-19.258333,148.55,38.32,0.0,1
+19076S,Showers Reef,CU,Capricorn,M,Mid-shelf,-19.491667,148.908333,24.56,0.0,1
+19082S,Elizabeth Reef,CU,Capricorn,M,Mid-shelf,-19.333333,149.05,26.7,0.0,1
+19098S,Wansfell Reef,CU,Capricorn,M,Mid-shelf,-19.508333,149.116667,25.08,0.0,1
+19103S,Holbourne Island Reef,CU,Capricorn,I,Inner,-19.716667,148.358333,8.45,0.0,1
+19131S,19131S,WH,Whitsunday,M,Mid-shelf,-19.766667,149.366667,22.86,0.0,4
+19135S,Hardy Reef,WH,Whitsunday,M,Mid-shelf,-19.758333,149.225,35.51,0.01,3
+19138S,19138S,WH,Whitsunday,M,Mid-shelf,-19.808333,149.425,21.0,0.018,4
+19159S,Slate Reef,WH,Whitsunday,O,Outer,-19.666667,149.925,48.56,0.0,4
+19207S,Hyde Reef,WH,Whitsunday,O,Outer,-19.758333,150.091667,54.48,0.0,3
+19209S,Rebe Reef,WH,Whitsunday,O,Outer,-19.808333,150.15,52.46,0.0,4
+20014S,Hayman Island Reef,WH,Whitsunday,I,Inner,-20.066667,148.891667,15.39,0.0,3
+20019S,Langford-Bird Reef,WH,Whitsunday,I,Inner,-20.091667,148.875,9.35,0.0,2
+20067A,Border Island Reef (No 1),WH,Whitsunday,I,Inner,-20.175,149.025,9.17,0.0,3
+20104S,20104S,WH,Whitsunday,M,Mid-shelf,-20.033333,149.683333,26.42,0.0,3
+20113S,Ben Reef,PO,Pompey,O,Outer,-20.008333,150.325,49.09,0.0,3
+20144S,Cannan Reef,PO,Pompey,M,Mid-shelf,-20.483333,150.141667,17.02,0.0,1
+20287S,Credlin Reefs (East),PO,Pompey,M,Mid-shelf,-20.541667,149.95,12.27,0.0,3
+20297S,Creal Reef,PO,Pompey,M,Mid-shelf,-20.533333,150.383333,36.52,0.0,2
+20309S,Tern Reef(20309),PO,Pompey,M,Mid-shelf,-20.908333,150.033333,30.49,3.935,4
+20348S,20348S,PO,Pompey,M,Mid-shelf,-20.891667,150.958333,31.63,0.0,2
+20351A,Pompey Reef (No 1),PO,Pompey,M,Mid-shelf,-20.941667,150.533333,27.65,0.0,4
+20351B,Pompey Reef (No 2),PO,Pompey,M,Mid-shelf,-20.991667,150.525,12.73,0.0,4
+20353S,20353S,PO,Pompey,M,Mid-shelf,-20.966667,150.916667,44.74,0.0,3
+20354S,20354S,PO,Pompey,M,Mid-shelf,-20.975,150.95,45.61,0.019,2
+21025S,Penrith Reef,PO,Pompey,M,Mid-shelf,-21.016667,149.9,17.08,0.0,1
+21060S,21060S,PO,Pompey,M,Mid-shelf,-21.016667,150.608333,20.08,0.0,4
+21062S,21062S,PO,Pompey,M,Mid-shelf,-21.033333,150.866667,25.31,0.128,2
+21064S,21064S,PO,Pompey,M,Mid-shelf,-21.058333,150.775,11.19,0.798,3
+21139S,21139S,PO,Pompey,M,Mid-shelf,-21.475,151.475,55.38,0.004,4
+21187S,21187S,PO,Pompey,M,Mid-shelf,-21.416667,151.641667,44.6,0.394,4
+21245S,21245S,SW,Swain,M,Mid-shelf,-21.308333,152.441667,35.94,0.027,2
+21278S,21278S,SW,Swain,M,Mid-shelf,-21.108333,152.55,32.18,0.0,1
+21296S,21296S,SW,Swain,O,Outer,-21.341667,152.55,23.39,0.0,2
+21302S,21302S,SW,Swain,O,Outer,-21.433333,152.575,51.73,0.0,1
+21305S,East Cay Reef,SW,Swain,O,Outer,-21.491667,152.558333,39.47,0.334,4
+21529S,21529S,SW,Swain,M,Mid-shelf,-21.866667,152.175,49.68,0.0,3
+21550S,21550S,SW,Swain,M,Mid-shelf,-21.958333,152.316667,42.11,0.0,2
+21556S,Gannett Cay Reef,SW,Swain,M,Mid-shelf,-21.983333,152.475,16.15,6.706,4
+21558S,21558S,SW,Swain,O,Outer,-21.558333,152.541667,47.91,0.114,3
+21562S,Turner Reef,SW,Swain,O,Outer,-21.725,152.558333,10.96,1.111,4
+21572S,Small Lagoon Reef,SW,Swain,M,Mid-shelf,-21.875,152.508333,24.4,1.804,3
+21584S,Jenkins Reef,SW,Swain,M,Mid-shelf,-21.958333,152.6,3.91,0.807,3
+21588S,Wade Reef,SW,Swain,M,Mid-shelf,-21.983333,152.65,8.62,0.231,4
+21591S,21591S,PO,Pompey,M,Mid-shelf,-21.025833,150.373,22.31,0.0,3
+22084S,22084S,SW,Swain,M,Mid-shelf,-22.0,152.458333,35.3,0.967,3
+22088S,Snake (22088),SW,Swain,M,Mid-shelf,-22.025,152.15,30.96,1.957,3
+22102S,Chinaman Reef(22102),SW,Swain,M,Mid-shelf,-22.008333,152.658333,16.59,1.343,6
+22104S,Horseshoe,SW,Swain,M,Mid-shelf,-22.033333,152.591667,5.6,1.488,4
+23045A,North Reef (North),CB,Capricorn-Bunker,O,Outer,-23.183333,151.908333,43.98,0.0,3
+23048S,Broomfield Reef,CB,Capricorn-Bunker,O,Outer,-23.275,151.941667,54.65,0.0,6
+23051S,Wreck Island Reef,CB,Capricorn-Bunker,O,Outer,-23.333333,151.966667,63.57,0.0,4
+23055S,One Tree Reef,CB,Capricorn-Bunker,O,Outer,-23.5,152.066667,55.89,0.024,4
+23068S,Erskine Reef,CB,Capricorn-Bunker,O,Outer,-23.508333,151.775,39.14,0.0,5
+23069S,Mast Head Reef,CB,Capricorn-Bunker,O,Outer,-23.541667,151.733333,33.75,0.0,4
+23079S,Boult Reef,CB,Capricorn-Bunker,O,Outer,-23.758333,152.266667,49.78,0.015,3
+23080S,Hoskyn Islands Reef,CB,Capricorn-Bunker,O,Outer,-23.808333,152.291667,54.49,0.0,3
+23081S,Fairfax Islands Reef,CB,Capricorn-Bunker,O,Outer,-23.858333,152.366667,45.8,0.016,5
+23082S,Lady Musgrave Reef,CB,Capricorn-Bunker,O,Outer,-23.908333,152.408333,52.5,0.075,6

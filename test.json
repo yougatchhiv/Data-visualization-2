@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Live Coral Trends by Shelf Position",
+    "subtitle": "Outer-shelf reefs have historically been healthier but face greater bleaching exposure.",
+    "fontSize": 15,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "#1a1a2e",
+    "subtitleColor": "#555"
+  },
+  "data": { "url": "data/AIMS_MantatowByReef_coralByShelf.csv" },
+  "facet": {
+    "field": "Shelf_Name",
+    "type": "nominal",
+    "sort": ["Inner", "Mid-shelf", "Outer"],
+    "header": { "titleFontSize": 13, "labelFontSize": 12, "title": null }
+  },
+  "spec": {
+    "width": 155,
+    "height": 200,
+    "layer": [
+      {
+        "mark": {
+          "type": "area",
+          "interpolate": "monotone",
+          "opacity": 0.15,
+          "color": "#2a9d8f"
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "quantitative",
+            "axis": { "format": "d", "title": null, "labelFontSize": 10 }
+          },
+          "y": {
+            "field": "Avg_Live_Coral",
+            "type": "quantitative",
+            "scale": { "domain": [0, 55] },
+            "axis": {
+              "title": "Live Coral (%)",
+              "titleFontSize": 11,
+              "labelFontSize": 10
+            }
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "interpolate": "monotone",
+          "strokeWidth": 2,
+          "color": "#2a9d8f",
+          "point": { "filled": true, "size": 30, "color": "#2a9d8f" }
+        },
+        "encoding": {
+          "x": { "field": "Year", "type": "quantitative" },
+          "y": { "field": "Avg_Live_Coral", "type": "quantitative" },
+          "tooltip": [
+            { "field": "Shelf_Name", "type": "nominal", "title": "Shelf" },
+            { "field": "Year", "type": "quantitative", "format": "d" },
+            {
+              "field": "Avg_Live_Coral",
+              "type": "quantitative",
+              "title": "Avg Live Coral (%)",
+              "format": ".1f"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
