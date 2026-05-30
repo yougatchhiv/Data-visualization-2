@@ -1,6 +1,6 @@
-type,visits
-Full Day,1575243
-Part Day,235485
-Scenic Flights,121283
-Coral Viewing,218355
-Exempt,226834
+type,visits,pct,pct_label
+Full Day,1575243,66.3,Full Day 66.3%
+Part Day,235485,9.9,Part Day 9.9%
+Scenic Flights,121283,5.1,Scenic Flights 5.1%
+Coral Viewing,218355,9.2,Coral Viewing 9.2%
+Exempt,226834,9.5,Exempt 9.5%
