@@ -1,0 +1,85 @@
+Year,REEF_NAME,SECTOR,SECTOR_NAME,SHELF_NAME,MEAN_LIVE_CORAL,MEAN_COTS_PER_TOW,TOWS,ZERO_COTS_COUNT,TOTAL_REEFS
+2021,Evening Reef,CA,Cairns,Mid-shelf,25.95,0.02,50,110,127
+2019,One Tree Reef,CB,Capricorn-Bunker,Outer,43.766,0.039,76,51,64
+2022,One Tree Reef,CB,Capricorn-Bunker,Outer,62.713,0.012,82,70,87
+2023,One Tree Reef,CB,Capricorn-Bunker,Outer,61.507,0.044,68,90,111
+2020,Boult Reef,CB,Capricorn-Bunker,Outer,48.949,0.045,44,70,86
+2023,Fairfax Islands Reef,CB,Capricorn-Bunker,Outer,51.955,0.051,39,90,111
+2019,Lady Musgrave Reef,CB,Capricorn-Bunker,Outer,50.295,0.382,55,51,64
+2021,Lady Musgrave Reef,CB,Capricorn-Bunker,Outer,51.117,0.03,66,110,127
+2020,Mcsweeney Reef,CG,Cooktown/Lizard Is.,Mid-shelf,2.845,0.138,29,70,86
+2021,Mcsweeney Reef,CG,Cooktown/Lizard Is.,Mid-shelf,5.625,0.083,24,110,127
+2022,Mcsweeney Reef,CG,Cooktown/Lizard Is.,Mid-shelf,11.319,0.194,36,70,87
+2020,Monsoon Reef,CG,Cooktown/Lizard Is.,Mid-shelf,7.188,0.042,24,70,86
+2022,Monsoon Reef,CG,Cooktown/Lizard Is.,Mid-shelf,17.25,0.2,30,70,87
+2023,Monsoon Reef,CG,Cooktown/Lizard Is.,Mid-shelf,21.05,0.04,25,90,111
+2019,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,4.122,0.027,37,51,64
+2021,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,7.568,0.324,37,110,127
+2022,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,19.695,0.78,41,70,87
+2023,11049S,CG,Cooktown/Lizard Is.,Mid-shelf,18.672,0.031,32,90,111
+2022,11162S,CG,Cooktown/Lizard Is.,Mid-shelf,29.194,0.065,31,70,87
+2021,Middle Banks B (3),CG,Cooktown/Lizard Is.,Mid-shelf,73.021,0.083,12,110,127
+2023,Martin Reef(14123),CL,Central,Inner,41.602,0.078,64,90,111
+2023,Linnet Reef,CL,Central,Inner,34.393,0.086,35,90,111
+2021,Fly Reef,CL,Central,Mid-shelf,10.87,0.043,23,110,127
+2023,Macgillivray Reef,CL,Central,Mid-shelf,36.912,0.059,17,90,111
+2021,Lizard Island,CL,Central,Mid-shelf,13.417,0.011,90,110,127
+2023,Lizard Island,CL,Central,Mid-shelf,24.083,0.01,105,90,111
+2023,Forrester Reef,CL,Central,Mid-shelf,41.864,0.034,59,90,111
+2021,Bowden Reef,CU,Capricorn,Mid-shelf,35.373,0.026,77,110,127
+2023,Bowden Reef,CU,Capricorn,Mid-shelf,32.07,0.032,93,90,111
+2021,Shell Reef,CU,Capricorn,Mid-shelf,35.75,0.04,25,110,127
+2021,Faith Reef,CU,Capricorn,Mid-shelf,27.059,0.088,34,110,127
+2022,Faith Reef,CU,Capricorn,Mid-shelf,32.674,0.056,36,70,87
+2019,Feather Reef,IN,Innisfail,Mid-shelf,7.174,0.109,46,51,64
+2020,13124S,PC,Princess Charlotte Bay,Mid-shelf,20.544,0.129,62,70,86
+2019,Creech Reef (North),PC,Princess Charlotte Bay,Outer,34.943,0.045,44,51,64
+2019,Davie Reef,PC,Princess Charlotte Bay,Outer,27.5,0.02,51,51,64
+2023,Tern Reef(20309),PO,Pompey,Mid-shelf,32.574,15.706,34,90,111
+2022,20354S,PO,Pompey,Mid-shelf,42.644,0.038,26,70,87
+2023,21062S,PO,Pompey,Mid-shelf,34.851,0.024,42,90,111
+2020,21064S,PO,Pompey,Mid-shelf,6.667,1.875,24,70,86
+2020,21139S,PO,Pompey,Mid-shelf,57.063,0.017,60,70,86
+2020,21187S,PO,Pompey,Mid-shelf,40.417,0.643,42,70,86
+2022,21187S,PO,Pompey,Mid-shelf,52.554,0.109,46,70,87
+2023,21187S,PO,Pompey,Mid-shelf,52.083,0.311,45,90,111
+2020,21245S,SW,Swain,Mid-shelf,28.18,0.035,57,70,86
+2023,21245S,SW,Swain,Mid-shelf,43.706,0.018,57,90,111
+2019,Gannett Cay Reef,SW,Swain,Mid-shelf,31.75,3.8,20,51,64
+2021,Gannett Cay Reef,SW,Swain,Mid-shelf,23.594,14.542,24,110,127
+2022,Gannett Cay Reef,SW,Swain,Mid-shelf,6.053,6.316,19,70,87
+2023,Gannett Cay Reef,SW,Swain,Mid-shelf,3.194,2.167,18,90,111
+2020,Small Lagoon Reef,SW,Swain,Mid-shelf,24.946,4.13,46,70,86
+2022,Small Lagoon Reef,SW,Swain,Mid-shelf,7.571,1.229,35,70,87
+2020,Jenkins Reef,SW,Swain,Mid-shelf,2.5,0.026,39,70,86
+2022,Jenkins Reef,SW,Swain,Mid-shelf,3.966,0.207,29,70,87
+2020,Wade Reef,SW,Swain,Mid-shelf,2.845,0.103,29,70,86
+2023,Wade Reef,SW,Swain,Mid-shelf,11.563,0.042,24,90,111
+2020,22084S,SW,Swain,Mid-shelf,43.938,2.9,20,70,86
+2019,Snake (22088),SW,Swain,Mid-shelf,33.168,0.102,88,51,64
+2021,Snake (22088),SW,Swain,Mid-shelf,36.133,2.313,96,110,127
+2022,Snake (22088),SW,Swain,Mid-shelf,23.577,3.457,94,70,87
+2019,Chinaman Reef(22102),SW,Swain,Mid-shelf,4.397,1.931,29,51,64
+2020,Chinaman Reef(22102),SW,Swain,Mid-shelf,4.474,3.447,38,70,86
+2021,Chinaman Reef(22102),SW,Swain,Mid-shelf,17.056,0.032,31,110,127
+2023,Chinaman Reef(22102),SW,Swain,Mid-shelf,20.313,0.031,32,90,111
+2019,Horseshoe,SW,Swain,Mid-shelf,3.265,4.329,85,51,64
+2021,Horseshoe,SW,Swain,Mid-shelf,3.705,1.036,83,110,127
+2022,Horseshoe,SW,Swain,Mid-shelf,6.591,0.341,88,70,87
+2023,Horseshoe,SW,Swain,Mid-shelf,8.83,0.245,94,90,111
+2021,East Cay Reef,SW,Swain,Outer,48.295,0.436,55,110,127
+2022,East Cay Reef,SW,Swain,Outer,45.653,0.522,67,70,87
+2023,East Cay Reef,SW,Swain,Outer,33.068,0.364,66,90,111
+2022,21558S,SW,Swain,Outer,49.821,0.19,42,70,87
+2019,Turner Reef,SW,Swain,Outer,5.536,4.393,56,51,64
+2021,Turner Reef,SW,Swain,Outer,15.932,0.051,59,110,127
+2020,Kelso Reef,TO,Townsville,Mid-shelf,32.822,0.136,66,70,86
+2020,Little Kelso Reef,TO,Townsville,Mid-shelf,14.492,0.031,32,70,86
+2023,Little Kelso Reef,TO,Townsville,Mid-shelf,26.912,0.029,34,90,111
+2019,John Brewer Reef,TO,Townsville,Mid-shelf,17.703,0.035,86,51,64
+2020,Centipede Reef,TO,Townsville,Mid-shelf,14.216,0.015,67,70,86
+2019,Davies Reef,TO,Townsville,Mid-shelf,31.332,0.022,46,51,64
+2022,Hardy Reef,WH,Whitsunday,Mid-shelf,36.056,0.022,135,70,87
+2023,Hardy Reef,WH,Whitsunday,Mid-shelf,34.456,0.008,131,90,111
+2021,19138S,WH,Whitsunday,Mid-shelf,22.411,0.036,28,110,127
+2022,19138S,WH,Whitsunday,Mid-shelf,24.784,0.034,29,70,87

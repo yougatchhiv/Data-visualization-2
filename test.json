@@ -1,72 +1,154 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Live Coral Trends by Shelf Position",
-    "subtitle": "Outer-shelf reefs have historically been healthier but face greater bleaching exposure.",
+    "text": "Crown-of-Thorns Starfish vs. Live Coral Cover by Reef",
+    "subtitle": "Each bubble is one reef survey. Size = number of tows. Use the slider to explore by year.",
     "fontSize": 15,
     "subtitleFontSize": 12,
     "anchor": "start",
     "color": "#1a1a2e",
     "subtitleColor": "#555"
   },
-  "data": { "url": "data/AIMS_MantatowByReef_coralByShelf.csv" },
-  "facet": {
-    "field": "Shelf_Name",
-    "type": "nominal",
-    "sort": ["Inner", "Mid-shelf", "Outer"],
-    "header": { "titleFontSize": 13, "labelFontSize": 12, "title": null }
+  "width": "container",
+  "height": 420,
+  "data": {
+    "url": "data/AIMS_MantatowByReef_scatter2019to2023.csv"
   },
-  "spec": {
-    "width": 155,
-    "height": 200,
-    "layer": [
+  "params": [
+    {
+      "name": "year_param",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2019,
+        "max": 2023,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.Year == year_param"
+    },
+    {
+      "filter": "datum.MEAN_LIVE_CORAL > 0"
+    }
+  ],
+  "mark": {
+    "type": "circle",
+    "opacity": 0.65,
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "field": "MEAN_COTS_PER_TOW",
+      "type": "quantitative",
+      "title": "Mean Crown-of-Thorns Starfish per Tow",
+      "axis": {
+        "titleFontSize": 12,
+        "labelFontSize": 11
+      },
+      "scale": {
+        "type": "sqrt",
+        "domain": [0, 8]
+      }
+    },
+    "y": {
+      "field": "MEAN_LIVE_CORAL",
+      "type": "quantitative",
+      "title": "Mean Live Coral Cover (%)",
+      "axis": {
+        "titleFontSize": 12,
+        "labelFontSize": 11
+      },
+      "scale": {
+        "domain": [0, 80]
+      }
+    },
+    "color": {
+      "field": "SECTOR_NAME",
+      "type": "nominal",
+      "title": "Sector",
+      "scale": {
+        "domain": [
+          "Cairns",
+          "Capricorn-Bunker",
+          "Cooktown/Lizard Is.",
+          "Central",
+          "Capricorn",
+          "Innisfail",
+          "Princess Charlotte Bay",
+          "Pompey",
+          "Swain",
+          "Townsville",
+          "Whitsunday"
+        ],
+        "range": [
+          "#e41a1c",
+          "#377eb8",
+          "#4daf4a",
+          "#984ea3",
+          "#ff7f00",
+          "#a65628",
+          "#f781bf",
+          "#999999",
+          "#e6ab02",
+          "#66c2a5",
+          "#fc8d62"
+        ]
+      },
+      "legend": {
+        "orient": "right",
+        "titleFontSize": 11,
+        "labelFontSize": 10
+      }
+    },
+    "size": {
+      "field": "TOWS",
+      "type": "quantitative",
+      "title": "Number of tows",
+      "scale": {
+        "range": [30, 400]
+      },
+      "legend": {
+        "orient": "bottom-right",
+        "titleFontSize": 10
+      }
+    },
+    "tooltip": [
       {
-        "mark": {
-          "type": "area",
-          "interpolate": "monotone",
-          "opacity": 0.15,
-          "color": "#2a9d8f"
-        },
-        "encoding": {
-          "x": {
-            "field": "Year",
-            "type": "quantitative",
-            "axis": { "format": "d", "title": null, "labelFontSize": 10 }
-          },
-          "y": {
-            "field": "Avg_Live_Coral",
-            "type": "quantitative",
-            "scale": { "domain": [0, 55] },
-            "axis": {
-              "title": "Live Coral (%)",
-              "titleFontSize": 11,
-              "labelFontSize": 10
-            }
-          }
-        }
+        "field": "REEF_NAME",
+        "type": "nominal",
+        "title": "Reef"
       },
       {
-        "mark": {
-          "type": "line",
-          "interpolate": "monotone",
-          "strokeWidth": 2,
-          "color": "#2a9d8f",
-          "point": { "filled": true, "size": 30, "color": "#2a9d8f" }
-        },
-        "encoding": {
-          "x": { "field": "Year", "type": "quantitative" },
-          "y": { "field": "Avg_Live_Coral", "type": "quantitative" },
-          "tooltip": [
-            { "field": "Shelf_Name", "type": "nominal", "title": "Shelf" },
-            { "field": "Year", "type": "quantitative", "format": "d" },
-            {
-              "field": "Avg_Live_Coral",
-              "type": "quantitative",
-              "title": "Avg Live Coral (%)",
-              "format": ".1f"
-            }
-          ]
-        }
+        "field": "SECTOR_NAME",
+        "type": "nominal",
+        "title": "Sector"
+      },
+      {
+        "field": "SHELF_NAME",
+        "type": "nominal",
+        "title": "Shelf"
+      },
+      {
+        "field": "MEAN_LIVE_CORAL",
+        "type": "quantitative",
+        "title": "Live Coral (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "MEAN_COTS_PER_TOW",
+        "type": "quantitative",
+        "title": "CoTS per tow",
+        "format": ".2f"
+      },
+      {
+        "field": "TOWS",
+        "type": "quantitative",
+        "title": "Tows conducted"
       }
     ]
   }

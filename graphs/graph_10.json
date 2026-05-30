@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Figure 10 : Distribution of Live Coral Cover Across GBR Reefs (2019–2023)",
+    "subtitle": "Most reef surveys record between 20–50% live coral. Outer reefs tend to have higher coverage.",
+    "fontSize": 15,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "#1a1a2e",
+    "subtitleColor": "#555"
+  },
+  "width": 400,
+  "height": 300,
+  "data": { "url": "data/AIMS_MantatowByReef_scatter2019to2023.csv" },
+  "transform": [{ "filter": "datum.MEAN_LIVE_CORAL > 0" }],
+  "mark": {
+    "type": "bar",
+    "binSpacing": 1,
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "x": {
+      "bin": { "maxbins": 20 },
+      "field": "MEAN_LIVE_CORAL",
+      "type": "quantitative",
+      "title": "Live Coral Cover (%)",
+      "axis": { "titleFontSize": 12, "labelFontSize": 11 }
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "stack": true,
+      "axis": {
+        "title": "Number of Reef Surveys",
+        "titleFontSize": 12,
+        "labelFontSize": 11
+      }
+    },
+    "color": {
+      "field": "SHELF_NAME",
+      "type": "nominal",
+      "title": "Shelf Position",
+      "scale": {
+        "domain": ["Inner", "Mid-shelf", "Outer"],
+        "range": ["#023e8a", "#0096c7", "#ade8f4"]
+      },
+      "legend": { "orient": "right", "titleFontSize": 11 }
+    },
+    "tooltip": [
+      {
+        "bin": true,
+        "field": "MEAN_LIVE_CORAL",
+        "type": "quantitative",
+        "title": "Coral cover range (%)"
+      },
+      { "field": "SHELF_NAME", "type": "nominal", "title": "Shelf" },
+      { "aggregate": "count", "type": "quantitative", "title": "Surveys" }
+    ]
+  }
+}

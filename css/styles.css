@@ -16,6 +16,8 @@ body {
   background: white;
   margin: 0 auto;
   padding: 48px 56px 80px;
+  border-right: 2px solid rgb(185, 185, 185);
+  border-left: 2px solid rgb(185, 185, 185);
 }
 
 .title {
@@ -108,8 +110,8 @@ body {
 }
 
 .vis2 {
-  border-top: 1px solid rgb(192, 192, 192);
-  border-bottom: 1px solid rgb(192, 192, 192);
+  border-top: 2px solid rgb(192, 192, 192);
+  border-bottom: 2px solid rgb(192, 192, 192);
   padding: 7px 0;
 }
 
@@ -127,6 +129,10 @@ body {
 
 .left-2 {
   padding-right: 60px;
+}
+
+.v8-left {
+  padding-right: 20px;
 }
 
 .v3-c {
@@ -158,4 +164,51 @@ body {
 
 .nd {
   border: none;
+}
+.sec8-t {
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: var(--serif);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.v8-c {
+  border: 1px solid rgb(172, 172, 172);
+  width: 100%;
+  padding: 20px;
+}
+
+.v9-c {
+  border: 1px solid rgb(172, 172, 172);
+  width: 100%;
+  padding: 20px;
+}
+
+.v10-c {
+  border: 1px solid rgb(172, 172, 172);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.sec8 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(172, 172, 172);
+}
+
+.v11-c {
+  border: 1px solid rgb(172, 172, 172);
+  padding: 5px;
+}
+
+footer {
+  font-family: var(--sans);
+  padding-top: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > p {
+  padding: 0;
+  margin: 0;
 }

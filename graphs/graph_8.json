@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Figure 8. Annual Visitors vs. Average Live Coral Cover (2016–2023)",
+    "fontSize": 14,
+    "anchor": "start"
+  },
+  "data": { "url": "data/AIMS_GBRMP_coralVsVisits2016to2023.csv" },
+  "vconcat": [
+    {
+      "width": 450,
+      "height": 200,
+      "title": {
+        "text": "Annual Visitors to the GBRMP",
+        "fontSize": 12,
+        "anchor": "start"
+      },
+      "layer": [
+        {
+          "mark": { "type": "bar", "opacity": 0.75, "color": "#1a3f5c" },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "axis": { "title": null, "labelFontSize": 12 }
+            },
+            "y": {
+              "field": "Total_Visits_M",
+              "type": "quantitative",
+              "axis": {
+                "title": "Visitors (millions)",
+                "titleFontSize": 11,
+                "labelFontSize": 11
+              },
+              "scale": { "domain": [0, 3] }
+            },
+            "tooltip": [
+              { "field": "Year", "type": "ordinal", "title": "Year" },
+              {
+                "field": "Total_Visits_M",
+                "type": "quantitative",
+                "title": "Visitors (M)",
+                "format": ".2f"
+              }
+            ]
+          }
+        },
+        {
+          "data": { "values": [{ "Year": "2020", "label": "COVID-19" }] },
+          "mark": {
+            "type": "text",
+            "dy": -8,
+            "fontSize": 9.5,
+            "fontStyle": "italic",
+            "color": "#888"
+          },
+          "encoding": {
+            "x": { "field": "Year", "type": "ordinal" },
+            "text": { "field": "label" }
+          }
+        }
+      ]
+    },
+    {
+      "width": 450,
+      "height": 200,
+      "title": {
+        "text": "Average Live Coral Cover Across the GBR",
+        "fontSize": 12,
+        "anchor": "start"
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "color": "#c0392b",
+            "strokeWidth": 2.5,
+            "point": { "filled": true, "size": 70, "color": "#c0392b" }
+          },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "axis": { "title": null, "labelFontSize": 12 }
+            },
+            "y": {
+              "field": "Avg_Live_Coral",
+              "type": "quantitative",
+              "axis": {
+                "title": "Avg Live Coral Cover (%)",
+                "titleFontSize": 11,
+                "labelFontSize": 11
+              },
+              "scale": { "domain": [0, 45] }
+            },
+            "tooltip": [
+              { "field": "Year", "type": "ordinal", "title": "Year" },
+              {
+                "field": "Avg_Live_Coral",
+                "type": "quantitative",
+                "title": "Live Coral (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": { "values": [{ "Year": "2020", "label": "COVID-19" }] },
+          "mark": {
+            "type": "text",
+            "dy": -8,
+            "fontSize": 9.5,
+            "fontStyle": "italic",
+            "color": "#888"
+          },
+          "encoding": {
+            "x": { "field": "Year", "type": "ordinal" },
+            "text": { "field": "label" }
+          }
+        }
+      ]
+    }
+  ]
+}
