@@ -1,171 +1,53 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 9",
-    "subtitle": "Bubble plot — reefs with CoTS presence only",
+    "text": "Figure 9. Visiter types",
+    "subtitle": "Proportion of each permit category",
     "fontSize": 14,
-    "subtitleFontSize": 11,
+    "subtitleFont": 11,
     "anchor": "start"
   },
-  "width": 800,
-  "height": 420,
+  "width": 400,
+  "height": 400,
   "autosize": { "type": "fit", "contains": "padding" },
-  "data": { "url": "data/AIMS_CoTS_affected_reefs.csv" },
-  "params": [
-    {
-      "name": "year_param",
-      "value": 2023,
-      "bind": {
-        "input": "select",
-        "options": [2019, 2020, 2021, 2022, 2023],
-        "labels": ["2019", "2020", "2021", "2022", "2023"],
-        "name": "Year: "
-      }
-    }
-  ],
-  "transform": [{ "filter": "datum.Year == year_param" }],
-  "layer": [
-    {
-      "mark": {
-        "type": "circle",
-        "opacity": 0.7,
-        "stroke": "white",
-        "strokeWidth": 0.5
-      },
-      "encoding": {
-        "x": {
-          "field": "MEAN_COTS_PER_TOW",
-          "type": "quantitative",
-          "title": "Mean Crown-of-Thorns Starfish per Tow",
-          "axis": { "titleFontSize": 12, "labelFontSize": 11 },
-          "scale": { "type": "sqrt", "domain": [0, 16] }
-        },
-        "y": {
-          "field": "MEAN_LIVE_CORAL",
-          "type": "quantitative",
-          "title": "Mean Live Coral Cover (%)",
-          "axis": { "titleFontSize": 12, "labelFontSize": 11 },
-          "scale": { "domain": [0, 80] }
-        },
-        "color": {
-          "field": "SECTOR_NAME",
-          "type": "nominal",
-          "title": "Sector",
-          "scale": {
-            "domain": [
-              "Cairns",
-              "Capricorn-Bunker",
-              "Cooktown/Lizard Is.",
-              "Central",
-              "Capricorn",
-              "Innisfail",
-              "Princess Charlotte Bay",
-              "Pompey",
-              "Swain",
-              "Townsville",
-              "Whitsunday"
-            ],
-            "range": [
-              "#e41a1c",
-              "#377eb8",
-              "#4daf4a",
-              "#984ea3",
-              "#ff7f00",
-              "#a65628",
-              "#f781bf",
-              "#999999",
-              "#e6ab02",
-              "#66c2a5",
-              "#fc8d62"
-            ]
-          },
-          "legend": {
-            "orient": "right",
-            "titleFontSize": 11,
-            "labelFontSize": 10
-          }
-        },
-        "size": {
-          "field": "TOWS",
-          "type": "quantitative",
-          "title": "Number of tows",
-          "scale": { "range": [30, 400] },
-          "legend": { "orient": "bottom-right", "titleFontSize": 10 }
-        },
-        "tooltip": [
-          { "field": "REEF_NAME", "type": "nominal", "title": "Reef" },
-          { "field": "SECTOR_NAME", "type": "nominal", "title": "Sector" },
-          { "field": "SHELF_NAME", "type": "nominal", "title": "Shelf" },
-          {
-            "field": "MEAN_LIVE_CORAL",
-            "type": "quantitative",
-            "title": "Live Coral (%)",
-            "format": ".1f"
-          },
-          {
-            "field": "MEAN_COTS_PER_TOW",
-            "type": "quantitative",
-            "title": "CoTS per tow",
-            "format": ".2f"
-          },
-          {
-            "field": "TOWS",
-            "type": "quantitative",
-            "title": "Tows conducted"
-          },
-          {
-            "field": "ZERO_COTS_COUNT",
-            "type": "quantitative",
-            "title": "Reefs with zero CoTS (hidden)"
-          },
-          {
-            "field": "TOTAL_REEFS",
-            "type": "quantitative",
-            "title": "Total reefs surveyed"
-          }
-        ]
+  "data": { "url": "data/GBRMP_VisitationsAll_2025_long.csv" },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 65,
+    "outerRadius": 120,
+    "stroke": "white",
+    "strokeWidth": 1.5
+  },
+  "encoding": {
+    "theta": {
+      "field": "visits",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Full Day",
+          "Part Day",
+          "Exempt",
+          "Coral Viewing",
+          "Scenic Flights"
+        ],
+        "range": ["#1a3f5c", "#2e6da4", "#5ba3d0", "#8dc4e5", "#c1dff0"]
       }
     },
-    {
-      "mark": {
-        "type": "text",
-        "align": "right",
-        "baseline": "bottom",
-        "dx": -8,
-        "dy": -8,
-        "fontSize": 11,
-        "fontStyle": "italic",
-        "color": "#555"
+    "tooltip": [
+      {
+        "field": "type",
+        "type": "nominal",
+        "title": "Visit Type"
       },
-      "encoding": {
-        "x": { "value": 800 },
-        "y": { "value": 420 },
-        "text": {
-          "condition": {
-            "test": "true",
-            "field": "ZERO_COTS_COUNT",
-            "type": "nominal"
-          }
-        }
-      },
-      "transform": [
-        { "filter": "datum.Year == year_param" },
-        {
-          "aggregate": [
-            { "op": "max", "field": "ZERO_COTS_COUNT", "as": "zero_count" },
-            { "op": "max", "field": "TOTAL_REEFS", "as": "total" }
-          ]
-        },
-        {
-          "calculate": "'★ ' + datum.zero_count + ' of ' + datum.total + ' reefs had zero CoTS (not shown)'",
-          "as": "annotation_text"
-        }
-      ],
-      "encoding": {
-        "x": { "value": 796 },
-        "y": { "value": 414 },
-        "text": { "field": "annotation_text", "type": "nominal" }
+      {
+        "field": "visits",
+        "type": "quantitative",
+        "title": "Visits (2025)"
       }
-    }
-  ]
+    ]
+  }
 }

@@ -171,7 +171,7 @@ body {
   font-weight: 700;
   font-family: var(--serif);
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .v8-c {
   border: 1px solid rgb(172, 172, 172);
@@ -192,7 +192,6 @@ body {
 }
 
 .sec8 {
-  padding-bottom: 20px;
   border-bottom: 2px solid rgb(172, 172, 172);
 }
 
@@ -220,4 +219,8 @@ footer > p {
 
 .nd {
   border: none;
+}
+
+.centering {
+  margin: 20px 0 auto;
 }

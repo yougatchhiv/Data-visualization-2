@@ -1,61 +1,112 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 10 : Distribution of Live Coral Cover Across GBR Reefs (2019–2023)",
-    "subtitle": "Most reef surveys record between 20–50% live coral. Outer reefs tend to have higher coverage.",
-    "fontSize": 15,
-    "subtitleFontSize": 12,
+    "text": "Figure 10. Quarterly Visitor Numbers, 2016–2025",
+    "subtitle": "Shaded band = COVID-19 period. Dashed lines = mass bleaching events.",
+    "fontSize": 14,
+    "subtitleFontSize": 11.5,
     "anchor": "start",
-    "color": "#1a1a2e",
-    "subtitleColor": "#555"
+    "color": "#111",
+    "subtitleColor": "#666"
   },
-  "width": 400,
-  "height": 300,
-  "data": { "url": "data/AIMS_MantatowByReef_scatter2019to2023.csv" },
-  "transform": [{ "filter": "datum.MEAN_LIVE_CORAL > 0" }],
-  "mark": {
-    "type": "bar",
-    "binSpacing": 1,
-    "stroke": "white",
-    "strokeWidth": 0.5
-  },
-  "encoding": {
-    "x": {
-      "bin": { "maxbins": 20 },
-      "field": "MEAN_LIVE_CORAL",
-      "type": "quantitative",
-      "title": "Live Coral Cover (%)",
-      "axis": { "titleFontSize": 12, "labelFontSize": 11 }
-    },
-    "y": {
-      "aggregate": "count",
-      "type": "quantitative",
-      "stack": true,
-      "axis": {
-        "title": "Number of Reef Surveys",
-        "titleFontSize": 12,
-        "labelFontSize": 11
+  "width": 740,
+  "height": 260,
+  "data": { "url": "data/GBRMP_VisitationsAll_quarterly.csv" },
+  "transform": [
+    {
+      "calculate": "(datum.Year - 2016) + (datum.QOrder - 1) * 0.25",
+      "as": "xpos"
+    }
+  ],
+  "layer": [
+    {
+      "data": { "values": [{ "x1": 4.0, "x2": 5.25 }] },
+      "mark": { "type": "rect", "opacity": 0.09, "color": "#c0392b" },
+      "encoding": {
+        "x": { "field": "x1", "type": "quantitative" },
+        "x2": { "field": "x2", "type": "quantitative" }
       }
     },
-    "color": {
-      "field": "SHELF_NAME",
-      "type": "nominal",
-      "title": "Shelf Position",
-      "scale": {
-        "domain": ["Inner", "Mid-shelf", "Outer"],
-        "range": ["#023e8a", "#0096c7", "#ade8f4"]
+    {
+      "data": { "values": [{ "x": 0.25 }, { "x": 4.0 }, { "x": 6.0 }] },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [5, 4],
+        "color": "#c0392b",
+        "opacity": 0.55,
+        "strokeWidth": 1.1
       },
-      "legend": { "orient": "right", "titleFontSize": 11 }
+      "encoding": { "x": { "field": "x", "type": "quantitative" } }
     },
-    "tooltip": [
-      {
-        "bin": true,
-        "field": "MEAN_LIVE_CORAL",
-        "type": "quantitative",
-        "title": "Coral cover range (%)"
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "opacity": 0.12,
+        "color": "#1B4F72"
       },
-      { "field": "SHELF_NAME", "type": "nominal", "title": "Shelf" },
-      { "aggregate": "count", "type": "quantitative", "title": "Surveys" }
-    ]
-  }
+      "encoding": {
+        "x": { "field": "xpos", "type": "quantitative" },
+        "y": { "field": "Total Visits", "type": "quantitative" }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone",
+        "strokeWidth": 1.8,
+        "color": "#1B4F72",
+        "point": { "filled": true, "size": 28, "color": "#1B4F72" }
+      },
+      "encoding": {
+        "x": {
+          "field": "xpos",
+          "type": "quantitative",
+          "scale": { "domain": [-0.1, 9.5] },
+          "axis": {
+            "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "labelExpr": "['2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'][datum.value]",
+            "title": null,
+            "labelFontSize": 11,
+            "tickSize": 5
+          }
+        },
+        "y": {
+          "field": "Total Visits",
+          "type": "quantitative",
+          "axis": {
+            "title": "Visits per quarter",
+            "format": "~s",
+            "labelFontSize": 11,
+            "titleFontSize": 12
+          }
+        },
+        "tooltip": [
+          { "field": "Quarter", "type": "nominal" },
+          { "field": "Total Visits", "type": "quantitative", "format": "," }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "x": 4.6, "y": 155000, "label": "COVID-19 Period" },
+          { "x": 0.25, "y": 155000, "label": "2016–17 Bleaching" },
+          { "x": 6.0, "y": 155000, "label": "2022 Bleaching" }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 9.5,
+        "color": "#c0392b",
+        "align": "center",
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative" },
+        "y": { "field": "y", "type": "quantitative" },
+        "text": { "field": "label" }
+      }
+    }
+  ]
 }

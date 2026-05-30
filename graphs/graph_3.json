@@ -1,56 +1,70 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 3. Total Visits by Management Area",
-    "subtitle": "Comparing regions by year",
+    "text": "Figure 3. Heatmap of the average live coral cover by sector and year",
+    "subtitle": "Average coral across all reefs in that sector",
     "fontSize": 14,
     "subtitleFontSize": 11,
     "anchor": "start"
   },
-  "width": 400,
-  "height": 500,
+  "width": 550,
+  "height": 400,
   "autosize": { "type": "fit", "contains": "padding" },
-  "data": { "url": "data/GBRMP_VisitationsByArea_annual.csv" },
-  "params": [
-    {
-      "name": "year_select",
-      "value": "2024",
-      "bind": {
-        "input": "select",
-        "options": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
-        "name": "Year : "
-      }
-    }
-  ],
-  "transform": [{ "filter": "datum.Year == year_select" }],
-  "mark": {
-    "type": "bar"
-  },
+  "data": { "url": "data/AIMS_MantatowByReef_coralBySector.csv" },
+  "transform": [{ "filter": "datum.Year >= 2010" }],
+  "mark": { "type": "rect" },
   "encoding": {
     "x": {
-      "field": "Area",
+      "field": "Year",
       "type": "nominal",
-      "sort": "-y",
       "axis": {
-        "title": "Location",
-        "labelFontSize": 11,
+        "title": "Year",
         "labelAngle": -20
       }
     },
     "y": {
-      "field": "Total Visits",
-      "type": "quantitative",
-      "axis": { "title": "Total Visits", "labelFontSize": 11 }
+      "field": "Sector_Name",
+      "type": "nominal",
+      "sort": [
+        "Cooktown/Lizard Is.",
+        "Cairns",
+        "Innisfail",
+        "Townsville",
+        "Whitsunday",
+        "Central",
+        "Princess Charlotte Bay",
+        "Pompey",
+        "Swain",
+        "Capricorn-Bunker",
+        "Capricorn"
+      ],
+      "axis": {
+        "title": "Sector"
+      }
     },
     "color": {
-      "field": "Area",
-      "type": "nominal",
-      "scale": { "range": ["#1a3f5c", "#c0392b", "#2a9d8f", "#e9c46a"] },
-      "legend": null
+      "field": "Avg_Live_Coral",
+      "type": "quantitative",
+      "title": " Avg Coral (%))",
+      "scale": {
+        "type": "linear",
+        "scheme": "greens",
+        "domain": [0, 50]
+      },
+      "legend": {
+        "orient": "right",
+        "gradientLength": 120
+      }
     },
     "tooltip": [
-      { "field": "Area", "type": "nominal", "title": "Management Area" },
-      { "field": "Total Visits", "type": "quantitative", "format": "," }
+      { "field": "Sector_Name", "type": "nominal", "title": "Sector" },
+      { "field": "Year", "type": "ordinal" },
+      {
+        "field": "Avg_Live_Coral",
+        "type": "quantitative",
+        "title": "Avg Live Coral (%)",
+        "format": ".1f"
+      }
     ]
   }
 }

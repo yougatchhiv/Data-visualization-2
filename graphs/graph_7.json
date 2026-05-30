@@ -1,68 +1,66 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 7. Live Coral Trends by Shelf Position",
-    "subtitle": "Outer-shelf reefs have histically been healthier",
+    "text": "Figure 7. Annual Visitations by Permit Type, 2016–2025",
+    "subtitle": "COVID-19 caused a 66% drop in 2020. Full-day trips consistently dominate.",
     "fontSize": 14,
     "subtitleFontSize": 11,
     "anchor": "start"
   },
-  "data": { "url": "data/AIMS_MantatowByReef_coralByShelf.csv" },
-  "facet": {
-    "field": "Shelf_Name",
-    "type": "nominal",
-    "sort": ["Inner", "Mid-shelf", "Outer"],
-    "header": { "title": null }
-  },
-  "spec": {
-    "width": 160,
-    "height": 200,
-    "layer": [
-      {
-        "mark": {
-          "type": "area",
-          "interpolate": "monotone",
-          "opacity": 0.15,
-          "color": "#2a9d8f"
-        },
-        "encoding": {
-          "x": {
-            "field": "Year",
-            "type": "quantitative",
-            "axis": { "format": "d", "title": "Year" }
-          },
-          "y": {
-            "field": "Avg_Live_Coral",
-            "type": "quantitative",
-            "scale": { "domain": [0, 55] },
-            "axis": {
-              "title": "Live Coral (%)"
-            }
-          }
-        }
+  "width": 720,
+  "height": 300,
+  "data": { "url": "data/GBRMP_VisitationsAll_annual.csv" },
+  "transform": [
+    {
+      "fold": [
+        "Full Day",
+        "Part Day",
+        "Scenic Flights",
+        "Coral Viewing",
+        "Exempt"
+      ],
+      "as": ["Visit Type", "Count"]
+    }
+  ],
+  "mark": { "type": "area", "interpolate": "monotone" },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "Count",
+      "type": "quantitative",
+      "stack": "zero",
+      "axis": {
+        "title": "Number of Visits",
+        "format": "~s",
+        "labelFontSize": 11
+      }
+    },
+    "color": {
+      "field": "Visit Type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Full Day",
+          "Part Day",
+          "Scenic Flights",
+          "Coral Viewing",
+          "Exempt"
+        ],
+        "range": ["#1a3f5c", "#2e6da4", "#5ba3d0", "#8dc4e5", "#c1dff0"]
       },
+      "legend": { "orient": "right" }
+    },
+    "tooltip": [
+      { "field": "Year", "type": "ordinal" },
+      { "field": "Visit Type", "type": "nominal" },
       {
-        "mark": {
-          "type": "line",
-          "interpolate": "monotone",
-          "strokeWidth": 2,
-          "color": "#2a9d8f",
-          "point": { "filled": true, "size": 30, "color": "#2a9d8f" }
-        },
-        "encoding": {
-          "x": { "field": "Year", "type": "quantitative" },
-          "y": { "field": "Avg_Live_Coral", "type": "quantitative" },
-          "tooltip": [
-            { "field": "Shelf_Name", "type": "nominal", "title": "Shelf" },
-            { "field": "Year", "type": "quantitative", "format": "d" },
-            {
-              "field": "Avg_Live_Coral",
-              "type": "quantitative",
-              "title": "Avg Live Coral (%)",
-              "format": ".1f"
-            }
-          ]
-        }
+        "field": "Count",
+        "type": "quantitative",
+        "title": "Visits",
+        "format": ","
       }
     ]
   }

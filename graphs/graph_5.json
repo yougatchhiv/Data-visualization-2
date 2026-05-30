@@ -1,143 +1,69 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Average Live Coral Cover Across the Great Barrier Reef (1993–2023)",
-    "subtitle": "bands mark mass coral bleaching events",
+    "text": "Figure 5. Live Coral Trends by Shelf Position",
+    "subtitle": "Outer-shelf reefs have histically been healthier",
     "fontSize": 14,
     "subtitleFontSize": 11,
     "anchor": "start"
   },
-  "width": 760,
-  "height": 320,
-  "data": { "url": "data/AIMS_MantatowByReef_coralAnnual.csv" },
-  "layer": [
-    {
-      "data": {
-        "values": [
-          { "start": 1997.5, "end": 1998.5, "label": "1998 Bleaching" },
-          { "start": 2001.5, "end": 2002.5, "label": "2002 Bleaching" },
-          {
-            "start": 2015.5,
-            "end": 2016.5,
-            "label": "2016 Bleaching (worst on record)"
+  "data": { "url": "data/AIMS_MantatowByReef_coralByShelf.csv" },
+  "facet": {
+    "field": "Shelf_Name",
+    "type": "nominal",
+    "sort": ["Inner", "Mid-shelf", "Outer"],
+    "header": { "title": null }
+  },
+  "spec": {
+    "width": 160,
+    "height": 200,
+    "layer": [
+      {
+        "mark": {
+          "type": "area",
+          "interpolate": "monotone",
+          "opacity": 0.15,
+          "color": "#2a9d8f"
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "quantitative",
+            "axis": { "format": "d", "title": "Year" }
           },
-          { "start": 2016.5, "end": 2017.5, "label": "2017 Bleaching" },
-          { "start": 2019.8, "end": 2020.5, "label": "2020 Bleaching + COVID" },
-          {
-            "start": 2021.8,
-            "end": 2022.5,
-            "label": "2022 Bleaching (La Niña)"
-          }
-        ]
-      },
-      "mark": { "type": "rect", "opacity": 0.12 },
-      "encoding": {
-        "x": {
-          "field": "start",
-          "type": "quantitative",
-          "scale": { "zero": false }
-        },
-        "x2": { "field": "end", "type": "quantitative" },
-        "color": { "value": "#d73027" }
-      }
-    },
-    {
-      "data": {
-        "values": [
-          { "year": 1998, "label": "1998" },
-          { "year": 2002, "label": "2002" },
-          { "year": 2016, "label": "2016" },
-          { "year": 2020, "label": "2020" },
-          { "year": 2022, "label": "2022" }
-        ]
-      },
-      "mark": {
-        "type": "rule",
-        "strokeDash": [4, 3],
-        "color": "#d73027",
-        "opacity": 0.6
-      },
-      "encoding": {
-        "x": { "field": "year", "type": "quantitative" }
-      }
-    },
-    {
-      "mark": {
-        "type": "area",
-        "interpolate": "monotone",
-        "opacity": 0.15,
-        "color": "#2a9d8f"
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "axis": { "title": "Year", "format": "d", "labelFontSize": 11 }
-        },
-        "y": { "field": "Avg_Live_Coral", "type": "quantitative" }
-      }
-    },
-    {
-      "mark": {
-        "type": "line",
-        "interpolate": "monotone",
-        "color": "#2a9d8f",
-        "strokeWidth": 2.5,
-        "point": { "filled": true, "size": 40, "color": "#2a9d8f" }
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "quantitative",
-          "axis": { "title": "Year" }
-        },
-        "y": {
-          "field": "Avg_Live_Coral",
-          "type": "quantitative",
-          "axis": {
-            "title": "Average Live Coral Cover (%)",
-            "titleFontSize": 12,
-            "labelFontSize": 11
-          }
-        },
-        "tooltip": [
-          { "field": "Year", "type": "quantitative", "format": "d" },
-          {
+          "y": {
             "field": "Avg_Live_Coral",
             "type": "quantitative",
-            "title": "Avg Live Coral (%)",
-            "format": ".1f"
-          },
-          { "field": "Count", "type": "quantitative", "title": "Reef surveys" }
-        ]
-      }
-    },
-    {
-      "data": {
-        "values": [
-          {
-            "year": 2016,
-            "coral": 28,
-            "label": "2016–17 Mass Bleaching"
-          },
-          {
-            "year": 1999,
-            "coral": 26,
-            "label": " 1998 & 2002 Mass bleaching"
+            "scale": { "domain": [0, 55] },
+            "axis": {
+              "title": "Live Coral (%)"
+            }
           }
-        ]
+        }
       },
-      "mark": {
-        "type": "text",
-        "fontSize": 9.5,
-        "color": "#c0392b",
-        "align": "left"
-      },
-      "encoding": {
-        "x": { "field": "year", "type": "quantitative" },
-        "y": { "field": "coral", "type": "quantitative" },
-        "text": { "field": "label", "type": "nominal" }
+      {
+        "mark": {
+          "type": "line",
+          "interpolate": "monotone",
+          "strokeWidth": 2,
+          "color": "#2a9d8f",
+          "point": { "filled": true, "size": 30, "color": "#2a9d8f" }
+        },
+        "encoding": {
+          "x": { "field": "Year", "type": "quantitative" },
+          "y": { "field": "Avg_Live_Coral", "type": "quantitative" },
+          "tooltip": [
+            { "field": "Shelf_Name", "type": "nominal", "title": "Shelf" },
+            { "field": "Year", "type": "quantitative", "format": "d" },
+            {
+              "field": "Avg_Live_Coral",
+              "type": "quantitative",
+              "title": "Avg Live Coral (%)",
+              "format": ".1f"
+            }
+          ]
+        }
       }
-    }
-  ]
+    ]
+  }
 }

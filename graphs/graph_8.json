@@ -1,124 +1,56 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 8. Annual Visitors vs. Average Live Coral Cover (2016–2023)",
+    "text": "Figure 8. Total Visits by Management Area",
+    "subtitle": "Comparing regions by year",
     "fontSize": 14,
+    "subtitleFontSize": 11,
     "anchor": "start"
   },
-  "data": { "url": "data/AIMS_GBRMP_coralVsVisits2016to2023.csv" },
-  "vconcat": [
+  "width": 400,
+  "height": 500,
+  "autosize": { "type": "fit", "contains": "padding" },
+  "data": { "url": "data/GBRMP_VisitationsByArea_annual.csv" },
+  "params": [
     {
-      "width": 450,
-      "height": 200,
-      "title": {
-        "text": "Annual Visitors to the GBRMP",
-        "fontSize": 12,
-        "anchor": "start"
-      },
-      "layer": [
-        {
-          "mark": { "type": "bar", "opacity": 0.75, "color": "#1a3f5c" },
-          "encoding": {
-            "x": {
-              "field": "Year",
-              "type": "ordinal",
-              "axis": { "title": null, "labelFontSize": 12 }
-            },
-            "y": {
-              "field": "Total_Visits_M",
-              "type": "quantitative",
-              "axis": {
-                "title": "Visitors (millions)",
-                "titleFontSize": 11,
-                "labelFontSize": 11
-              },
-              "scale": { "domain": [0, 3] }
-            },
-            "tooltip": [
-              { "field": "Year", "type": "ordinal", "title": "Year" },
-              {
-                "field": "Total_Visits_M",
-                "type": "quantitative",
-                "title": "Visitors (M)",
-                "format": ".2f"
-              }
-            ]
-          }
-        },
-        {
-          "data": { "values": [{ "Year": "2020", "label": "COVID-19" }] },
-          "mark": {
-            "type": "text",
-            "dy": -8,
-            "fontSize": 9.5,
-            "fontStyle": "italic",
-            "color": "#888"
-          },
-          "encoding": {
-            "x": { "field": "Year", "type": "ordinal" },
-            "text": { "field": "label" }
-          }
-        }
-      ]
-    },
-    {
-      "width": 450,
-      "height": 200,
-      "title": {
-        "text": "Average Live Coral Cover Across the GBR",
-        "fontSize": 12,
-        "anchor": "start"
-      },
-      "layer": [
-        {
-          "mark": {
-            "type": "line",
-            "color": "#c0392b",
-            "strokeWidth": 2.5,
-            "point": { "filled": true, "size": 70, "color": "#c0392b" }
-          },
-          "encoding": {
-            "x": {
-              "field": "Year",
-              "type": "ordinal",
-              "axis": { "title": null, "labelFontSize": 12 }
-            },
-            "y": {
-              "field": "Avg_Live_Coral",
-              "type": "quantitative",
-              "axis": {
-                "title": "Avg Live Coral Cover (%)",
-                "titleFontSize": 11,
-                "labelFontSize": 11
-              },
-              "scale": { "domain": [0, 45] }
-            },
-            "tooltip": [
-              { "field": "Year", "type": "ordinal", "title": "Year" },
-              {
-                "field": "Avg_Live_Coral",
-                "type": "quantitative",
-                "title": "Live Coral (%)",
-                "format": ".1f"
-              }
-            ]
-          }
-        },
-        {
-          "data": { "values": [{ "Year": "2020", "label": "COVID-19" }] },
-          "mark": {
-            "type": "text",
-            "dy": -8,
-            "fontSize": 9.5,
-            "fontStyle": "italic",
-            "color": "#888"
-          },
-          "encoding": {
-            "x": { "field": "Year", "type": "ordinal" },
-            "text": { "field": "label" }
-          }
-        }
-      ]
+      "name": "year_select",
+      "value": "2024",
+      "bind": {
+        "input": "select",
+        "options": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+        "name": "Year : "
+      }
     }
-  ]
+  ],
+  "transform": [{ "filter": "datum.Year == year_select" }],
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "field": "Area",
+      "type": "nominal",
+      "sort": "-y",
+      "axis": {
+        "title": "Location",
+        "labelFontSize": 11,
+        "labelAngle": -20
+      }
+    },
+    "y": {
+      "field": "Total Visits",
+      "type": "quantitative",
+      "axis": { "title": "Total Visits", "labelFontSize": 11 }
+    },
+    "color": {
+      "field": "Area",
+      "type": "nominal",
+      "scale": { "range": ["#1a3f5c", "#c0392b", "#2a9d8f", "#e9c46a"] },
+      "legend": null
+    },
+    "tooltip": [
+      { "field": "Area", "type": "nominal", "title": "Management Area" },
+      { "field": "Total Visits", "type": "quantitative", "format": "," }
+    ]
+  }
 }
