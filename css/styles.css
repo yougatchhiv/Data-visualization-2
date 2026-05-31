@@ -137,6 +137,7 @@ body {
 
 .v8-left {
   padding-right: 20px;
+  margin: auto 0;
 }
 
 .v3-c {
@@ -223,4 +224,8 @@ footer > p {
 
 .centering {
   margin: 20px 0 auto;
+}
+
+.extra {
+  padding-top: 20px;
 }
